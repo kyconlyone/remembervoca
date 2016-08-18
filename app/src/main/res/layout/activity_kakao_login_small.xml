@@ -1,0 +1,70 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ihateflyingbugs.hsmd.KakaoLoginActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#cccccc"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:gravity="center"
+            android:text="밀당 영단어"
+            android:textColor="#ffffff"
+            android:textSize="36sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginRight="46dp"
+            android:layout_marginTop="18dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:gravity="center"
+            android:text="단순한 영단어 APP이 아닙니다.\n\n오늘부터 수능 당일까지\n당신의 단어학습을 책임질"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:text="단어 암기 시스템입니다."
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+      
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb_kakaologin_login"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+      <com.kakao.usermgmt.LoginButton
+            android:id="@+id/bt_kakaologin_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="27dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentBottom="true" />
+      
+</RelativeLayout>

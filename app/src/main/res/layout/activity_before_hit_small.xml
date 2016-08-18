@@ -1,0 +1,23 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2f6e9b"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp"
+    android:paddingTop="9dp" >
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_basic"
+        android:divider="#ffffff"
+        android:paddingBottom="29dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="14dp" >
+    </ListView>
+
+</LinearLayout>

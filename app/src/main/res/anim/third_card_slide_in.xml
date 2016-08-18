@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate 
+        android:fromXDelta="100%"
+        android:toXDelta="90%"
+        
+        android:duration="83"
+        android:startOffset="0"/>
+    <translate 
+        android:fromXDelta="0%"
+        android:toXDelta="-60%"
+        
+        android:duration="83"
+        android:startOffset="83"/>
+    <translate 
+        android:fromXDelta="100%"
+        android:toXDelta="-15%"
+        
+        android:duration="125"
+        android:startOffset="167"/>
+    <translate 
+        android:fromXDelta="100%"
+        android:toXDelta="-15%"
+        
+        android:duration="125"
+        android:startOffset="292"/>
+</set>

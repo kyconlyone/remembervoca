@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        android:gravity="center_horizontal"
+        android:text="잡힐 듯 말 듯, 단어를 잡고 싶을 땐"
+        android:textColor="#00b569"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:gravity="center_horizontal"
+        android:text="밀당 영단어"
+        android:textColor="#00b569"
+        android:textSize="27sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#00b569" />
+
+    <LinearLayout
+        android:id="@+id/ll_choice_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_choice_topic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" 
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:gravity="center_horizontal"
+            android:text="먼저 학습목표를 선택해주세요."
+            android:textColor="#88000000"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/bt_choice_sat"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/btn_choice_topic"
+            android:text="수능"
+            android:textColor="#00b569"
+            android:onClick="#ffffff"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/bt_choice_toeic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/btn_choice_topic"
+            android:text="TOEIC"
+            android:textColor="#00b569"
+            android:textSize="23sp" />
+
+        <Button
+            android:id="@+id/bt_choice_toefl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:background="@drawable/btn_choice_topic"
+            android:text="TOEFL"
+            android:textColor="#00b569"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tutorial_start"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_choice_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="36dp"
+            android:layout_weight="0"
+            android:gravity="center_horizontal"
+            android:text="자, 그럼 지금부터 김기훈님만을 위한 밀당영단어 머신러닝 사용법을 배워보겠습니다."
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_tutorial_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="27dp"
+            android:layout_weight="0"
+            android:background="@drawable/btn_tutorial_start"
+            android:text="시작하기"
+            android:textColor="#ffffff"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|bottom" >
+
+            <Button
+                android:id="@+id/bt_tutorial_rechoice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:background="@drawable/btn_choice_topic"
+                android:text="다시 선택하기"
+                android:textColor="#00b569"
+                android:textSize="23sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,741 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/bg_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/yellow_gradient"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/bg_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gray_gradient"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_curve_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="밀당영단어의\n[망각곡선 자동 복습기]로\n김끼훈님의 망각곡선(기억력)을\n측정해 드릴게요"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tuto_memory_kakao_profile"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/forgetqwest_img_kakaoback" />
+
+        <ImageView
+            android:id="@+id/iv_tuto_memory_kakao_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="14dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_memory_curve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="29dp"
+        android:gravity="center_vertical"
+        android:visibility="visible" >
+
+        <View
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:background="#00000000" />
+
+        <ImageView
+            android:id="@+id/iv_tuto_memory_wide_curve"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/forgetqwest_img_graph"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_curve_zoom_lens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ll_tuto_memory_curve"
+        android:layout_centerVertical="true"
+        android:src="@drawable/forgetqwest_img_graph_expand"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_memory_quest_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/forgetqwest_confirm_btn"
+        android:text="확인"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tuto_memory_setting_top"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:background="#d9a729"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_finish_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:alpha="0.54"
+        android:background="@drawable/qwest_textbox_reward_small"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="완료 보상 : 망각곡선 자동 복습기"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_teach_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_memory_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="그럼 지금부터 김기훈님의\n망각곡선 측정을 위한\n효율적인 단어 암기 방법을\n알려드릴게요"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_learnpage"
+        android:layout_width="264dp"
+        android:layout_height="264dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:src="@drawable/forgetqwest_img_learnpage"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_memory_learn"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/forgetqwest_confirm_btn"
+        android:clickable="false"
+        android:visibility="invisible" />
+<!--  -->
+    <TextView
+        android:id="@+id/tv_tuto_memory_right_push_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_memory_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="오른쪽으로 살짝 밀어서\n단어의 뜻을 보고 외워주세요"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_tts_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_memory_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="단어를 터치하면\n원어민 발음도 들을 수 있어요!\n아마 외우는데 도움 될 거에요"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_left_push_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_memory_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="이제 단어를 외웠다면\n왼쪽으로 밀어서 없애주세요"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- 시작 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_tuto_memroy_wordlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_tutorial_notice"
+            android:layout_width="fill_parent"
+            android:layout_height="161dp"
+            android:layout_alignParentTop="true"
+            android:background="#e1aa25"
+            android:gravity="center_horizontal"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            
+		    <TextView
+		        android:id="@+id/tv_tuto_memory_finish_reward_wordlist"
+		        android:layout_width="wrap_content"
+		        android:layout_height="22dp"
+		        android:layout_marginTop="36dp"
+		        android:alpha="0.54"
+		        android:background="@drawable/qwest_textbox_reward_small"
+		        android:gravity="center"
+		        android:paddingLeft="18dp"
+		        android:paddingRight="18dp"
+		        android:text="완료 보상 : 망각곡선 자동 복습기"
+		        android:textColor="#ffffff"
+		        android:textSize="10sp"
+            	android:visibility="invisible"/>
+		    
+            <TextView
+                android:id="@+id/tv_tutorial_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_marginTop="14dp"
+                android:text="단어를 터치하면 원어민 발음도 들을수 있어요! 아마 외우는데 도움 될거에요"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="3dp"
+                android:textSize="14sp"
+                android:textStyle="bold" 
+                android:gravity="center"
+            	android:visibility="invisible"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_shadow_top"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/ll_tutorial_notice"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tuto_shadow" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_tutorial_right"
+            android:layout_width="fill_parent"
+            android:layout_height="119dp"
+            android:background="@drawable/tuto_good"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_check_step"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_toturial"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/ll_check_step"
+            android:layout_below="@id/iv_shadow_top"
+            android:layout_marginBottom="9dp"
+            android:divider="@drawable/main_cell_line"
+            android:focusable="false" />
+
+        <ImageView
+            android:id="@+id/iv_guide3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_tutorial_notice"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/tuto_guide_01"
+            android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/iv_guide4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_tutorial_notice"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/tuto_guide_02"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_navi3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_tutorial_notice"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="11dp"
+            android:src="@drawable/forgetqwest_ic_hand"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_nav2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_tutorial_notice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/forgetqwest_ic_hand"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <!-- 끝 
+
+    <ListView
+        android:id="@+id/lv_tuto_memory_tutorial"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_tuto_memory_setting_top"
+        android:layout_marginBottom="9dp"
+        android:focusable="false"
+        android:visibility="gone" />
+-->
+    <ImageView
+        android:id="@+id/iv_tuto_memory_mean_guide"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rl_tuto_memory_setting_top"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/forgetqwest_img_guide"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_known_guide"
+        android:layout_width="301dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_tuto_memory_setting_top"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/forgetqwest_img_guide2"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_mean_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iv_tuto_memory_mean_guide"
+        android:layout_below="@id/rl_tuto_memory_setting_top"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/forgetqwest_ic_hand"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_tts_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_tuto_memory_setting_top"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/forgetqwest_ic_hand"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_known_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_tuto_memory_setting_top"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/forgetqwest_ic_hand"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_question_mark"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/forgetqwest_ic_questionmark"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_when_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="228dp"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="지금 외운 이 단어를\n언제까지\n기억 할 수 있을까요"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_3_hour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="한 학생은\n&apos;3시간&apos;을 기억했고"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_7_hour_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="어떤 학생은\n&apos;7시간&apos;을 기억했습니다"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_memory_card_7"
+        android:layout_width="305dp"
+        android:layout_height="121dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="292dp"
+        android:background="@drawable/card_basic"
+        android:padding="9dp"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:src="@drawable/forgetqwest_ic_b" />
+
+            <LinearLayout
+                android:layout_width="161dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="22dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="161dp"
+                    android:layout_height="36dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/forgetqwest_img_graph_grids" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/forgetqwest_img_graph_7" />
+
+                    <ImageView
+                        android:id="@+id/iv_tuto_memory_7_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/forgetqwest_img_graph_cover" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="attendance" />
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/forgetqwest_ic_clock" />
+
+                        <TextView
+                            android:id="@+id/tv_card_7_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="00:00"
+                            android:textSize="23sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_memory_card_3"
+        android:layout_width="305dp"
+        android:layout_height="121dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:background="@drawable/card_basic"
+        android:padding="9dp"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="73dp"
+                android:layout_height="73dp"
+                android:src="@drawable/forgetqwest_ic_a" />
+
+            <LinearLayout
+                android:layout_width="161dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="22dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="161dp"
+                    android:layout_height="36dp" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/forgetqwest_img_graph_grids" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/forgetqwest_img_graph_3" />
+
+                    <ImageView
+                        android:id="@+id/iv_tuto_memory_3_cover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/forgetqwest_img_graph_cover" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="161dp"
+                    android:layout_height="36dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="attendance" />
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="36dp"
+                        android:gravity="center_vertical" >
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/forgetqwest_ic_clock" />
+
+                        <TextView
+                            android:id="@+id/tv_card_3_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="00:00"
+                            android:textSize="23sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_user_memory_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="그렇다면 가장 중요한\n김끼훈님의 기억력은\n어떨까요?"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_memory_question_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_tuto_memory_kakao_profile"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:src="@drawable/forgetqwest_ic_clock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="\?\?:\?\?"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_goal_setting_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:alpha="0.87"
+        android:text="최적화 설정 완료"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_memory_head_icon"
+        android:layout_width="257dp"
+        android:layout_height="224dp"
+        android:layout_below="@+id/tv_tuto_memory_goal_setting_finish"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/forgetqwest_ic_reward"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_reward_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_tuto_memory_head_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:alpha="0.87"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="기억력 측정은 김기훈님의\n학습 빅데이터를 기반으로 측정됩니다"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_memory_finish_reward_after"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tv_tuto_memory_reward_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:alpha="0.87"
+        android:background="@drawable/qwest_textbox_reward"
+        android:gravity="center"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:text="완료 보상 : 망각곡선 자동 복습기"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_memory_quest_finish_reward"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/forgetqwest_btn_reward"
+        android:text="보상받기"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

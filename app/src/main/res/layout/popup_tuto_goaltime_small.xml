@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:drawSelectorOnTop="false"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/rl_setgoal_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/rl_goal_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingBottom="13dp" >
+
+            <TextView
+                android:id="@+id/tv_goal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="11dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="9dp"
+                android:text="목표시간을 설정해주세요"
+                android:textColor="#9f000000"
+                android:textSize="13sp" />
+
+            <NumberPicker
+                android:id="@+id/np_tuto_goaltime_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_gravity="center"
+                />
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_close_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_below="@id/rl_goal_con"
+            android:background="#888888"
+            android:text="확 인"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

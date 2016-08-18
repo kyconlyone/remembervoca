@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="368dp"
+    android:background="#cccccc"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="92dp" >
+
+        <TextView
+            android:id="@+id/new_study_wordTv"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="9dp"
+            android:gravity="center|top"
+            android:text="새학습\n단어"
+            android:textColor="#000000"
+            android:textSize="5pt" />
+
+        <TextView
+            android:id="@+id/new_study_word_countTv"
+            android:layout_width="64dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="#000000"
+            android:textSize="20pt" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000000"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/review_wordTv"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="9dp"
+            android:gravity="center|top"
+            android:text="복습한\n단어"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/review_word_countTv"
+            android:layout_width="64dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="#000000"
+            android:textSize="20pt" />
+
+        <TextView
+            android:id="@+id/all_review_word_countTv"
+            android:layout_width="55dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="9dp"
+            android:gravity="center|bottom"
+            android:text="/120"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/goal_timeTv"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="목표시간 10분"
+        android:textColor="#000000"
+        android:textSize="15pt" />
+
+    <ProgressBar
+        android:id="@+id/timePb"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="165dp"
+        android:layout_marginTop="18dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/goal_timerTv"
+            android:layout_width="138dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="목표 타이머"
+            android:textColor="#000000"
+            android:textSize="8pt" />
+
+        <ToggleButton
+            android:id="@+id/goal_timerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="1dp"
+            android:text="ToggleButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

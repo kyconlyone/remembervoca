@@ -1,0 +1,25 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeWord"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <!--
+       <com.fortysevendeg.swipelistview.SwipeListView
+            android:id="@+id/example_lv_list"
+            android:listSelector="#00000000"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            swipe:swipeFrontView="@+id/front"
+            swipe:swipeBackView="@+id/back"
+            swipe:swipeDrawableChecked="@drawable/choice_selected"
+            swipe:swipeDrawableUnchecked="@drawable/choice_unselected"
+            swipe:swipeCloseAllItemsWhenMoveList="true"
+            swipe:swipeMode="both" />
+    -->
+    
+  
+
+</RelativeLayout>

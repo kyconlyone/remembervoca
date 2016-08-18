@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="kakaostory-1.1.7">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../RememberVoca/build/intermediates/exploded-aar/com.kakao.sdk/kakaostory/1.1.7/res" />
+      <root url="jar://$PROJECT_DIR$/../RememberVoca/build/intermediates/exploded-aar/com.kakao.sdk/kakaostory/1.1.7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kakao.sdk/kakaostory/1.1.7/d205f21259bac98c952997367b633d0167707b95/kakaostory-1.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

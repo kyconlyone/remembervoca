@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/forget_explain" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_back_graph"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="학습 현황으로 돌아가기"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

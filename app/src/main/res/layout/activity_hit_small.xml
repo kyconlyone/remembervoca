@@ -1,0 +1,1236 @@
+﻿<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2f6e9b"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/card_basic"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/hit_notice_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#2f6e9b"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/hit_notice_body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/feed_coach_grey"
+                     android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:textColor="#555555"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/more_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#ffffff"
+                    android:gravity="center"
+                    android:text="더 보기"
+                    android:textColor="#2f6e9b"
+                    android:textSize="11dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="11dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/upper"
+                android:orientation="horizontal"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp" >
+
+                <ImageView
+                    android:id="@+id/using_grade_img"
+                    android:layout_width="84dp"
+                    android:layout_height="94dp"
+                    android:layout_marginTop="3dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="13dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="지금 암기 중인 단어장"
+                        android:textColor="#8a000000"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_current_word_grade"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:text="적중 필수 1 단어장"
+                        android:textColor="#2f6e9b"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom"
+                android:orientation="vertical"
+                android:paddingBottom="26dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp" >
+
+                <TextView
+                    android:id="@+id/select_word_count_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="14dp"
+                    android:gravity="right"
+                    android:text="00/0000개 단어"
+                    android:textColor="#2f6e9b"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/my_progress_gauge"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:background="#2f6e9c" />
+
+                    <TextView
+                        android:id="@+id/my_progress_background"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:background="#c7d7e4" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="17dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="단어 수"
+                                android:textColor="#8a000000"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_word_count"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="000000"
+                                android:textColor="#8a000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="8dp"
+                            android:alpha="0.12"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="적정 등급"
+                                android:textColor="#8a000000"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_word_grade"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="5~6등급"
+                                android:textColor="#8a000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="8dp"
+                            android:alpha="0.12"
+                            android:background="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="9dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="난이도"
+                                android:textColor="#8a000000"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_word_difficuty"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="쉬움"
+                                android:textColor="#8a000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="8dp"
+                            android:alpha="0.12"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="117dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="출제 확률"
+                                android:textColor="#8a000000"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/tv_word_percentage"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right"
+                                android:text="99~99%"
+                                android:textColor="#8a000000"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="8dp"
+                            android:alpha="0.12"
+                            android:background="#000000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/card_basic"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="19dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="단어장 변경"
+                android:textColor="#8a000000"
+                android:textSize="11sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="264dp"
+                android:layout_marginTop="11dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="3dp"
+                    android:background="#f7f9fb"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/grade_one_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="51dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:background="@drawable/statecheck_targetpage_button" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:paddingRight="22dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="26dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="bottom"
+                                    android:text="적중 기초 단어장"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/grade_one_word_count_tv"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="right|bottom"
+                                    android:text="0000/0000"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" >
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="14dp"
+                                android:layout_marginTop="9dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/progress_gauge_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#2f6e9c" />
+
+                                <TextView
+                                    android:id="@+id/progress_background_1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#c7d7e4" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/grade_two_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="51dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:background="@drawable/statecheck_targetpage_button" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:paddingRight="22dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="26dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="bottom"
+                                    android:text="적중 필수1 단어장"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/grade_two_word_count_tv"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="right|bottom"
+                                    android:text="0000/0000"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" >
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="14dp"
+                                android:layout_marginTop="9dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/progress_gauge_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#2f6e9c" />
+
+                                <TextView
+                                    android:id="@+id/progress_background_2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#c7d7e4" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/grade_three_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="51dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:background="@drawable/statecheck_targetpage_button" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:paddingRight="22dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="26dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="bottom"
+                                    android:text="적중 필수2 단어장"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/grade_three_word_count_tv"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="right|bottom"
+                                    android:text="0000/0000"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" >
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="14dp"
+                                android:layout_marginTop="9dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/progress_gauge_3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#2f6e9c" />
+
+                                <TextView
+                                    android:id="@+id/progress_background_3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#c7d7e4" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/grade_four_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="51dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:background="@drawable/statecheck_targetpage_button" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:paddingRight="22dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="26dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="bottom"
+                                    android:text="적중 마스터 단어장"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/grade_four_word_count_tv"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="right|bottom"
+                                    android:text="0000/0000"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" >
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="14dp"
+                                android:layout_marginTop="9dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/progress_gauge_4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#2f6e9c" />
+
+                                <TextView
+                                    android:id="@+id/progress_background_4"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#c7d7e4" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/grade_five_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="51dp"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="18dp"
+                            android:background="@drawable/statecheck_targetpage_button" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:paddingRight="22dp" >
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="26dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="bottom"
+                                    android:text="적중 심화 단어장"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/grade_five_word_count_tv"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:gravity="right|bottom"
+                                    android:text="0000/0000"
+                                    android:textColor="#8a000000"
+                                    android:textSize="11sp" >
+                                </TextView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginBottom="14dp"
+                                android:layout_marginTop="9dp"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/progress_gauge_5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#2f6e9c" />
+
+                                <TextView
+                                    android:id="@+id/progress_background_5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="5"
+                                    android:background="#c7d7e4" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/grade_one_touch_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/selectbar_targetpage_button"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="58dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="27dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="22dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="bottom"
+                                android:text="적중 기초 단어장"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/select_one_word_count_tv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right|bottom"
+                                android:text="000/000"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginTop="9dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="4dp" >
+
+                            <TextView
+                                android:id="@+id/select_progress_gauge_1"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/select_progress_background_1"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#5e8fb1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/grade_two_touch_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="51dp"
+                    android:background="@drawable/selectbar_targetpage_button"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="58dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="27dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="22dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="bottom"
+                                android:text="적중 필수1 단어장"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/select_two_word_count_tv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right|bottom"
+                                android:text="000/000"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginTop="9dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="4dp" >
+
+                            <TextView
+                                android:id="@+id/select_progress_gauge_2"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/select_progress_background_2"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#5e8fb1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/grade_three_touch_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="103dp"
+                    android:background="@drawable/selectbar_targetpage_button"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="58dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="27dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="22dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="bottom"
+                                android:text="적중 필수2 단어장"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/select_three_word_count_tv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right|bottom"
+                                android:text="000/000"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginTop="9dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="4dp" >
+
+                            <TextView
+                                android:id="@+id/select_progress_gauge_3"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/select_progress_background_3"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#5e8fb1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/grade_four_touch_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="154dp"
+                    android:background="@drawable/selectbar_targetpage_button"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="58dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="27dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="22dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="bottom"
+                                android:text="적중 마스터 단어장"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/select_four_word_count_tv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right|bottom"
+                                android:text="000/000"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginTop="9dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="4dp" >
+
+                            <TextView
+                                android:id="@+id/select_progress_gauge_4"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/select_progress_background_4"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#5e8fb1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/grade_five_touch_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="206dp"
+                    android:background="@drawable/selectbar_targetpage_button"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:layout_width="58dp"
+                        android:layout_height="58dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="27dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="22dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:gravity="bottom"
+                                android:text="적중 심화 단어장"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/select_five_word_count_tv"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:gravity="right|bottom"
+                                android:text="000/000"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginTop="9dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="4dp" >
+
+                            <TextView
+                                android:id="@+id/select_progress_gauge_5"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#ffffff" />
+
+                            <TextView
+                                android:id="@+id/select_progress_background_5"
+                                android:layout_width="0dp"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="5"
+                                android:background="#5e8fb1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/card_basic"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="11dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="밀당 적중 단어장의 이번 시험 적중률"
+                android:textColor="#8a000000"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_horizontal"
+                android:text="2016학년도 수학능력검정시험"
+                android:textColor="#2f6e9b"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="2014.11.11시행"
+                android:textColor="#8a000000"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="266dp"
+                android:layout_height="184dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="9dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hit_this_test_hit_ratio_sooneong" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="업데이트 기준 안내"
+                        android:textColor="#8a000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="단어장은 매년 갱신되는 EBS문제집, 수능, 평가원 모의고사를 기반으로 업데이트됩니다."
+                        android:textColor="#8a000000"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="단어 분류 기준 안내"
+                        android:textColor="#8a000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="본 통계에는 조동사, 관계사, 비동사, 관사가 제거ㅓ되어있으며, 모든 단어는 단수형, 현재형으로 취급하였습니다."
+                        android:textColor="#8a000000"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/before_book_hit_percentageTv"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/selectbutton_targetpage_closebutton"
+                android:gravity="center"
+                android:text="이전 시험 적중률 보기"
+                android:textColor="#8a000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#2f6e9b"
+            android:orientation="vertical"
+            android:padding="22dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hit_pushTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="적중 관련 푸쉬 알림"
+                    android:textColor="#8affffff"
+                    android:textSize="12sp" />
+
+                <ToggleButton
+                    android:id="@+id/hit_pushBtn"
+                    android:layout_width="59dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/onbutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="287dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#2a4c66" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/workBook_ListLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="11dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/workBook_ListTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="출제 문제집 리스트"
+                    android:textColor="#8affffff"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/icon_allpage_backicon_normal_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

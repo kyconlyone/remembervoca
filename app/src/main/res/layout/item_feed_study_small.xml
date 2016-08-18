@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:background="@drawable/feed_card_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="23dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="학습현황"
+                android:textColor="#44ffffff"
+                android:textSize="11sp"
+                android:textStyle="bold" 
+                android:layout_marginLeft="9dp"/>
+
+            <ImageButton
+                android:id="@+id/iv_feed_study"
+                android:layout_width="55dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:src="@drawable/feed_card_btn" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:background="#44ffffff" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="9dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="복습한단어"
+                    android:textColor="#b3ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_feed_total_study"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginTop="29dp"
+                    android:text="1250"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/feed_card_dotline" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" 
+                android:paddingRight="9dp">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center_vertical"
+                    android:text="새학습 단어"
+                    android:textColor="#b3ffffff"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_feed_new"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:gravity="right"
+                    android:text="1024"
+                    android:textColor="#ffffff"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/ll_recovery_forward"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_tuto_end"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="단어 데이터 복구를\n시작하시겠습니까?" />
+
+        <Button
+            android:id="@+id/bt_recovery"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/willqwest_confirm_btn"
+            android:text="복구하기"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_recovery_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/will_calendar_back"
+            android:text="취소"
+            android:textColor="#757575"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_recovery_db"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pb_recovery_db"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

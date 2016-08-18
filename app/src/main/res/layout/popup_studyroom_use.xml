@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tuto_end"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_studyroom_complete" />
+
+        <TextView
+            android:id="@+id/text_studyroomuse_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:textSize="16sp"
+            android:textColor="#757575"
+            android:text="세계최초 기억력 측정 영단어 어플,\n밀당영단어를 가맹 독서실에서\n무료로 이용하세요!\n" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center_horizontal"
+            android:text="가맹독서실 인증을(독서실  wifi 접속) 통해 무료사용이 가능합니다."
+            android:textSize="12sp" 
+            android:textColor="#757575"/>
+
+        <Button
+            android:id="@+id/bt_studyroomuse_use"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/willqwest_confirm_btn"
+            android:text="이용하기"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

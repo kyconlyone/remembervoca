@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context="com.ihateflyingbugs.vocaslide.ScreenPopupActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="323dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/popup_memory_app"
+                android:paddingBottom="16dp"
+                android:text="김기훈님의 망각 곡선 분석 결과 망각할 위험이 있는 단어 36개가 추출되었습니다. 이 단어들이 수능에 나올 확률은 67%입니다."
+                android:textColor="#deffffff"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popup_all_down"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/no_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="미루기"
+                    android:textColor="#3d000000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/yes_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:text="확인"
+                    android:textColor="#de000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </LinearLayout>
+
+</LinearLayout>

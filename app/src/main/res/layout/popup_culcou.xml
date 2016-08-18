@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:drawSelectorOnTop="false" >
+
+    <RelativeLayout
+        android:id="@+id/push_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_doc_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_law_bg" >
+
+            <ImageView
+                android:id="@+id/iv_count_coupon"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:padding="0dp"/>
+
+            <TextView
+                android:id="@+id/tv_cou_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_count_coupon"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="asdfasdfasdfasdfasdfsadfjhasdfjasldfjals;kdfj;laksdjf;l\nkasdjf;lkasdjf;lksadjf;lksadjf;lksadjf;lksadjf;lksajdf;lks\nadjfk;lasjdf;klasjdf;lkjasd;lfkjasdfkl"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_close_cou_popup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl_doc_con"
+            android:background="@drawable/bt_law_selector"
+            android:text="확 인"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

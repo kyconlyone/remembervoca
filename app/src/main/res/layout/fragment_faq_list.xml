@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_studylist"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/faq_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#f4f4f4"
+        android:dividerHeight="0dp"
+        android:focusable="false"
+        android:paddingBottom="50dp" />
+
+</RelativeLayout>

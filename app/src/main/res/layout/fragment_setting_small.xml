@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+        <LinearLayout 
+		    android:layout_width="match_parent" android:layout_height="match_parent"
+		    android:orientation="vertical" >
+		
+            
+
+			
+		    
+		    <LinearLayout 
+			    android:layout_width="match_parent" android:layout_height="match_parent"
+			    android:orientation="vertical"
+			    android:gravity="center_horizontal" >
+	        	
+		        <TextView 
+	        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        		android:layout_gravity="left"
+	        		android:layout_marginLeft="20dip" android:layout_marginTop="20dip"
+	        		android:text="ON/OFF" android:textColor="#000000" android:textSize="17dip"/>
+		        
+		        <LinearLayout 
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:layout_marginTop="10dip"
+				    android:gravity="center_vertical" android:paddingTop="3dip"
+				    android:paddingLeft="15dip" android:paddingRight="15dip"
+				    android:background="@drawable/setting_bar1">
+					
+		            <TextView 
+		        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        		android:layout_weight="1"
+		        		android:text="잠금화면 단어장 켜기" android:textColor="#000000" android:textSize="17dip"/>
+		            
+		            <LinearLayout 
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="right">
+		                
+			            <CheckBox android:id="@+id/chkLock"
+			                android:layout_width="wrap_content" android:layout_height="wrap_content"
+			                android:button="@null" 
+			                android:background="@drawable/chk_setting_1"/>
+		            
+			        </LinearLayout>
+		        </LinearLayout>
+		        
+		        <LinearLayout 
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:gravity="center_vertical" android:paddingTop="3dip"
+				    android:paddingLeft="15dip" android:paddingRight="15dip"
+				    android:background="@drawable/setting_bar4">
+					
+		            <TextView 
+		        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        		android:layout_weight="1"
+		        		android:text="팝업 알림 켜기" android:textColor="#000000" android:textSize="17dip"/>
+		            
+		            <LinearLayout 
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:gravity="right">
+		                
+			            <CheckBox android:id="@+id/chkPopup"
+			                android:layout_width="wrap_content" android:layout_height="wrap_content"
+			                android:button="@null" 
+			                android:background="@drawable/chk_setting_1"/>
+		            
+			        </LinearLayout>
+		        </LinearLayout>
+		         
+		        <LinearLayout android:id="@+id/linearDetail" android:visibility="gone"
+				    android:layout_width="wrap_content" android:layout_height="wrap_content"
+				    android:orientation="vertical">
+				    
+		            <TextView 
+		        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		        		android:layout_gravity="left"
+		        		android:layout_marginLeft="20dip" android:layout_marginTop="40dip"
+		        		android:text="팝업 알림 세부 설정" android:textColor="#000000" android:textSize="17dip"/>
+			        
+		            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical" android:paddingTop="3dip"
+					    android:layout_marginTop="10dip"
+					    android:paddingLeft="15dip" android:paddingRight="15dip"
+					    android:background="@drawable/setting_bar1">
+						
+			            <TextView 
+			        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        		android:layout_weight="1"
+			        		android:text="팝업 시간 설정" android:textColor="#000000" android:textSize="17dip"/>
+			            
+			            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="right">
+			                
+			                <Button android:id="@+id/btnStartTime"
+				                android:layout_width="wrap_content" android:layout_height="wrap_content"
+				                android:background="@null"
+				                android:text="시작 : 오전 8시" android:textColor="#6fd865" />
+			                
+				        </LinearLayout>
+			        </LinearLayout>
+			        
+		            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical" android:paddingTop="3dip"
+					    android:paddingLeft="15dip" android:paddingRight="15dip"
+					    android:background="@drawable/setting_bar2">
+						
+			            <TextView android:visibility="invisible"
+			        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        		android:layout_weight="1"
+			        		android:text="팝업 시간 설정" android:textColor="#000000" android:textSize="17dip"/>
+			            
+			            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="right">
+			            
+				            <Button android:id="@+id/btnEndTime"
+				                android:layout_width="wrap_content" android:layout_height="wrap_content"
+				                android:background="@null"
+				                android:text="종료 : 오후 8시" android:textColor="#6fd865" />
+				        </LinearLayout>
+			        </LinearLayout>
+			        
+			        <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical" android:paddingTop="3dip"
+					    android:paddingLeft="15dip" android:paddingRight="15dip"
+					    android:background="@drawable/setting_bar3">
+						
+			            <TextView 
+			        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        		android:layout_weight="1"
+			        		android:text="팝업 간격 설정" android:textColor="#000000" android:textSize="17dip"/>
+			            
+			            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="right">
+			                
+			                <Button android:id="@+id/btnInterval"
+			            		android:layout_width="wrap_content" android:layout_height="wrap_content"
+			            		android:background="@null"
+			            		android:text="10분" android:textColor="#6fd865"/>
+				        </LinearLayout>
+			        </LinearLayout>
+			        
+			        <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical" android:paddingTop="3dip"
+					    android:paddingLeft="15dip" android:paddingRight="15dip"
+					    android:background="@drawable/setting_bar3">
+						
+			            <TextView 
+			        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        		android:layout_weight="1"
+			        		android:text="진동알림" android:textColor="#000000" android:textSize="17dip"/>
+			            
+			            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="right">
+			                
+				            <CheckBox android:id="@+id/chkVibrate"
+				                android:layout_width="wrap_content" android:layout_height="wrap_content"
+				                android:button="@null" 
+				                android:background="@drawable/chk_setting_2"/>
+			            
+				        </LinearLayout>
+			        </LinearLayout>
+			        
+			        <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical" android:paddingTop="3dip"
+					    android:paddingLeft="15dip" android:paddingRight="15dip"
+					    android:background="@drawable/setting_bar4">
+						
+			            <TextView 
+			        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        		android:layout_weight="1"
+			        		android:text="소리알림" android:textColor="#000000" android:textSize="17dip"/>
+			            
+			            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="right">
+			                
+				            <CheckBox android:id="@+id/chkSound"
+				                android:layout_width="wrap_content" android:layout_height="wrap_content"
+				                android:button="@null" 
+				                android:background="@drawable/chk_setting_2"/>
+			            
+				        </LinearLayout>
+			        </LinearLayout>
+			        
+			        <LinearLayout android:visibility="gone"
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:orientation="horizontal"
+					    android:gravity="center_vertical" android:paddingTop="3dip"
+					    android:paddingLeft="15dip" android:paddingRight="15dip"
+					    android:background="@drawable/setting_bar4">
+						
+			            <TextView 
+			        		android:layout_width="wrap_content" android:layout_height="wrap_content"
+			        		android:layout_weight="1"
+			        		android:text="알림음설정" android:textColor="#000000" android:textSize="17dip"/>
+			            
+			            <LinearLayout 
+					    android:layout_width="wrap_content" android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:gravity="right">
+			                
+				            <TextView android:id="@+id/tvSound"
+				                android:layout_width="wrap_content" android:layout_height="wrap_content"
+				                android:text="똑똑똑" android:textColor="#6fd865" />
+			            
+				        </LinearLayout>
+			        </LinearLayout>
+		            
+				</LinearLayout>
+		        
+	        </LinearLayout>
+		</LinearLayout>
+</RelativeLayout>

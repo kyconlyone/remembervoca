@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_intropage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/iv_intropage_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/loginsuccess_icon" />
+
+            <TextView
+                android:id="@+id/tv_intropage_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:gravity="center_horizontal"
+                android:text="이제 &apos;김기훈&apos;님만의\n암기 시스템을\n설치하겠습니다."
+                android:textColor="#8a000000"
+                android:lineSpacingExtra="22dp"
+                android:textSize="20sp"/>
+
+            <org.andlib.ui.CircleAnimationView
+                android:id="@+id/bt_intropage_confirm"
+                android:layout_width="264dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:background="#2f6e9b"
+                android:text="시스템 인스톨 시작" />
+
+            <LinearLayout
+                android:id="@+id/ll_intropage_not_use_cellular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/informationcon" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:text="설치 시 데이터를 사용하지 않습니다."
+                    android:textColor="#3d000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="391dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:alpha="0.54"
+                android:gravity="right"
+                android:text="0%"
+                android:textColor="#702f6e9b"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_progress_back"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.04"
+                    android:background="#000000"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_progress_gauge"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.54"
+                    android:background="#000000"
+                    android:orientation="horizontal"
+                    android:visibility="invisible" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_page_backward_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="279dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/feed_main_bg"
+            android:orientation="vertical"
+            android:paddingLeft="49dp"
+            android:paddingRight="49dp"
+            android:paddingTop="52dp"
+            android:visibility="invisible" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_page1"
+            android:layout_width="fill_parent"
+            android:layout_height="279dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="29dp"
+            android:paddingRight="29dp"
+            android:paddingTop="52dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_page1_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:gravity="center_horizontal"
+                android:text="SYSTEM VERSION"
+                android:textColor="#8a000000"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_page1_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Ver. 2.0"
+                android:textColor="#e1aa25"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/dv_page1_divider"
+                android:layout_width="220dp"
+                android:layout_height="1px"
+                android:layout_marginTop="36dp"
+                android:background="#d9dae0"
+                android:layout_gravity="center_horizontal"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_page1_ongoing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:gravity="center_horizontal"
+                android:text="암기 시스템을 설치중입니다."
+                android:textColor="#70000000"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_page2"
+            android:layout_width="match_parent"
+            android:layout_height="279dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:paddingLeft="29dp"
+            android:paddingRight="29dp"
+            android:paddingTop="52dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_page2_finish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="82dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center_horizontal"
+                android:text="시스템\n설치 완료!"
+                android:textColor="#ea4e37"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_page3"
+            android:layout_width="match_parent"
+            android:layout_height="279dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="52dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_page3_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center_horizontal"
+                android:text="&apos;김기훈&apos;님 만의\n시스템 이름을 입력해 주세요!"
+                android:textColor="#8a000000"
+                android:textSize="14sp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/et_page3_systemname"
+                android:layout_width="180dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/blank_name_popup"
+                android:gravity="center"
+                android:hint="이름 입력"
+                android:inputType="text"
+                android:textColor="#ea4e37"
+                android:textColorHint="#3d000000"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <org.andlib.ui.CircleAnimationView
+                android:id="@+id/bt_page3_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/redbutton"
+                android:text="시스템 이름 입력"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_page4"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingTop="52dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_page4_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center_horizontal"
+                android:text="안녕하세요. 김기훈님\n허니버터칩 입니다!"
+                android:textColor="#e1aa25"
+                android:textSize="20sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_page4_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:text="시스템들을 김기훈님에게 맞추기 위해서\n몇가지 정보가 필요합니다.\n입력해주실거죠?"
+                android:textColor="#8a000000"
+                android:textSize="14sp"
+                android:lineSpacingExtra="5dp"
+                android:visibility="invisible" />
+
+            <org.andlib.ui.CircleAnimationView
+                android:id="@+id/bt_page4_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="26dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/redbutton"
+                android:text="맞춤 정보 입력"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_page5"
+            android:layout_width="match_parent"
+            android:layout_height="479dp"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="26dp"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:id="@+id/ll_page5_signin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+	            android:paddingLeft="22dp"
+	            android:paddingRight="22dp"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/tv_page5_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="이름"
+                    android:textColor="#2f6e9b"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_page5_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:hint="이름"
+                    android:textColor="#8a000000"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#1E000000" />
+
+                <TextView
+                    android:id="@+id/tv_page5_school"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="재학중인 학교"
+                    android:textColor="#2f6e9b"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_page5_school"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:hint="학교 이름"
+                    android:textSize="14sp"  />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#1E000000" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_page5_birth"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="생년월일"
+                            android:textColor="#2f6e9b"
+                    		android:textSize="10sp" />
+
+                        <EditText
+                            android:id="@+id/et_page5_birth"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:background="@null"
+                            android:hint="예) 960815"
+                            android:inputType="number"
+                            android:textColor="#8a000000"
+                    		android:textSize="14sp"  />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="109dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_page5_grade"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="14dp"
+                            android:text="모의고사 등급"
+                            android:textColor="#2f6e9b"
+              			    android:textSize="10sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_page5_grade_input"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="11dp"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="등급 입력"
+                            android:textColor="#2f6e9b"
+                    		android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp" >
+
+                    <View
+                        android:layout_width="90dp"
+                        android:layout_height="0.5dp"
+                        android:background="#1E000000" />
+
+                    <View
+                        android:layout_width="123dp"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="24dp"
+                        android:background="#1E000000" />
+                </LinearLayout>
+                
+                <TextView
+                    android:id="@+id/tv_page5_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="이메일"
+                    android:textColor="#2f6e9b"
+                    android:textSize="10sp" />
+
+                <EditText
+                    android:id="@+id/et_page5_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@null"
+                    android:hint="이메일"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#8a000000"
+                    android:textSize="14sp"  />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="7dp"
+                    android:background="#1E000000" />
+
+                <LinearLayout 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/checkbutton_background"
+                    android:layout_marginTop="10dp" 
+                    android:gravity="center"         
+                    android:orientation="vertical">
+                    
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <CheckBox
+                            android:id="@+id/cb_utilization"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/radiobuttonselector"
+                            android:checked="false" 
+                      		android:layout_marginLeft="6dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_utilization"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/cb_utilization"
+                            android:text="이용 약관에 동의 합니다."
+                            android:textColor="#8a000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/cb_collection"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/radiobuttonselector"
+                            android:checked="false" 
+                      		android:layout_marginLeft="6dp"/>
+
+                        <TextView
+                            android:id="@+id/tv_collection"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/cb_collection"
+                            android:text="개인 정보수집에 동의 합니다."
+                            android:textColor="#8a000000"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <org.andlib.ui.CircleAnimationView
+                android:id="@+id/bt_page5_signin"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/redbutton"
+                android:text="맞춤 정보 입력"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_page6"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="118dp"
+            android:paddingBottom="32dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="52dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:id="@+id/tv_page6_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="52dp"
+                android:gravity="center"
+                android:text="고1 이시네요!"
+                android:textColor="#2f6e9b"
+                android:textSize="34sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_page6_contents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:text="고1이 되었을 땐\n단어가 시간 잡어먹을 일이 없도록\n제가 책임지겠습니다."
+                android:textColor="#8a000000"
+                android:textSize="14sp"
+                android:lineSpacingExtra="2dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="36dp"
+            android:visibility="visible" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <org.andlib.ui.CircleAnimationView
+                android:id="@+id/bt_page6_confirm"
+                android:layout_width="264dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0"
+                android:background="@drawable/bluebutton"
+                android:gravity="center"
+                android:text="그럼 시작해볼까요?"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notice_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="설치 시 이동 통신 데이터를 사용하지 않습니다."
+            android:textColor="#282f6e9b"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_page_backward_picture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:background="@drawable/circle" >
+
+                <ImageView
+                    android:id="@+id/iv_page_backward_picture"
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:padding="2dp"
+                    android:src="@drawable/profile"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="84dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_page_backward_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shape_circle_white" />
+
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shape_circle_brown" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_info_input_finish"
+            android:layout_width="fill_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="45dp"
+            android:visibility="invisible" >
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="174dp"
+                android:layout_height="29dp"
+                android:background="@drawable/informationisputted"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

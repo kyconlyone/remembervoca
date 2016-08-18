@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_tuto_end">
+
+        <LinearLayout
+            android:id="@+id/ll_quit_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="140dp"
+                android:src="@drawable/img_secession_trashcan" 
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="정말 밀당영단어 회원을\n탈퇴하시겠습니까?" 
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"
+                android:textColor="#757575"
+                android:lineSpacingExtra="8dp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_quit_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_secession_confirm"
+                    android:text="예"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/bt_quit_cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_secession_cancel"
+                    android:textColor="#757575" 
+                    android:text="아니요"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_quit_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그동안 밀당영단어 서비스를 사용해 주셔서 감사합니다. 더 나은 서비스를 위하여 탈퇴사유를 간략히 알려주시면 감사하겠습니다."
+                android:lineSpacingExtra="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="#757575" />
+
+            <RadioGroup
+                android:id="@+id/rg_quit_reason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#75000000" />
+
+                <RadioButton
+                    android:id="@+id/rb_quit_reason1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="가격 부담"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#75000000" />
+
+                <RadioButton
+                    android:id="@+id/rb_quit_reason2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="학습 기능 불만족"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#75000000" />
+
+                <RadioButton
+                    android:id="@+id/rb_quit_reason3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="교육 효과에 대한 신뢰 부족"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#75000000" />
+
+                <RadioButton
+                    android:id="@+id/rb_quit_reason4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="유료 앱 사용에 대한 거부감"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#75000000" />
+                
+                <RadioButton
+                    android:id="@+id/rb_quit_reason5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부모님의 반대"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#75000000" />
+
+                <RadioButton
+                    android:id="@+id/rb_quit_reason_etc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기타 사항"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#75000000" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bt_quit_ok2"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textSize="14sp"
+                android:text="회원 탈퇴 완료" 
+                android:background="@drawable/img_secession_confirm"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_quit_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/et_quit_reason"
+                android:layout_width="fill_parent"
+                android:layout_height="154dp"
+                android:hint="탈퇴하시는 이유를 작성해\n주시면 감사하겠습니다."
+                android:background="#ebebeb" 
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/bt_quit_ok3"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/img_secession_confirm"
+                android:textColor="#ffffff"
+                android:text="확 인"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/ll_quit_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_quit_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="탈퇴하시는 이유를 작성해\n주시면 감사하겠습니다."
+                android:padding="10dp"
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/bt_quit_postpone"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/willqwest_confirm_btn"
+                android:textColor="#ffffff"
+                android:text="하루 더 사용하기"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp" />
+            
+            <TextView 
+                android:id="@+id/tv_quit_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="지금 바로 탈퇴하기"
+                android:textColor="#0000ff"
+                android:layout_marginTop="16dp"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

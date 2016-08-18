@@ -1,0 +1,254 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firewillanimation.WillTutoActivity" >
+    
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_will_user"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_will_high"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:text="사용자 설정"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_will_high"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_will_mid"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:text="하면 된다. 30분!"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_will_mid"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_will_low"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:text="그래도 20분은 해야"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_will_low"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:visibility="invisible" />
+    
+<RelativeLayout
+        android:id="@+id/graphLayout"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" 
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="22dp"
+        android:visibility="invisible">
+
+        <org.andlib.ui.PercentView
+            android:id="@+id/percentView1"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp" />
+
+        <ImageView
+            android:id="@+id/timer_off"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/timer_top" 
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/timeView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="34dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_goal_time_min"
+                    android:layout_width="34dp"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.4"
+                    android:gravity="right|bottom"
+                    android:text="00"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="27dp"
+                    android:layout_height="fill_parent"
+                    android:alpha="0.4"
+                    android:gravity="left|bottom"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="1dp"
+                    android:text="분"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_goal_time_sec"
+                android:layout_width="fill_parent"
+                android:layout_height="27dp"
+                android:alpha="0.2"
+                android:gravity="center|bottom"
+                android:paddingBottom="11dp"
+                android:text="00" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tuto_will_setting_top"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:background="#DD4F37"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp" 
+        android:visibility="invisible">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tuto_will_finish_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/qwest_textbox_reward_small"
+        android:gravity="center"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textSize="10sp"
+        android:text="완료 보상 : 카카오톡 차단 기능"
+        android:textColor="#ffffff"
+        android:alpha="0.54"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_will_setting_goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_will_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="목표시간을 설정해 주세요"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_will_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_will_setting_goal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:src="@drawable/willqwest_clork_icon"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_will_goal_setting_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:text="목표 시간 설정 완료" 
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#FAE4D9"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_will_punch_icon"
+        android:layout_width="257dp"
+        android:layout_height="224dp"
+        android:layout_below="@+id/tv_tuto_will_goal_setting_finish"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/willqwest_reward_icon" 
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_will_do_not_forget_will"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/iv_tuto_will_punch_icon"
+        android:layout_marginLeft="8dp"
+        android:text="지금의 의지를\n잊지마세요"  
+        android:lineSpacingExtra="7dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FAE4D9"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_will_finish_reward_after"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingRight="27dp"
+        android:paddingLeft="27dp"
+        android:layout_below="@+id/tv_tuto_will_do_not_forget_will"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/qwest_textbox_reward"
+        android:text="완료 보상 : 카카오톡 차단 기능" 
+        android:textSize="10sp"
+        android:textColor="#ffffff"
+        android:alpha="0.87"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_will_quest_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/willqwest_reward_btn"
+        android:text="보상받기" 
+        android:textColor="#e7d5cc"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+    
+
+</RelativeLayout>

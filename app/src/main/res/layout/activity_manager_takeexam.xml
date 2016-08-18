@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/list_takeexam_questions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:paddingBottom="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="3dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_activity_takeexam_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/takeexam_progress_view"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:cpv_animAutostart="true"
+            app:cpv_indeterminate="true" />
+    </RelativeLayout>
+</RelativeLayout>

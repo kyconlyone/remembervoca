@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\studiobackup\\20160803\\copyproject\\remembervoca\\SlideLibrary\\build\\intermediates\\res\\merged\\androidTest\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 903,
+                    "endColumn": 42,
+                    "endOffset": 941
+                },
+                "from": {
+                    "file": "C:\\studiobackup\\20160803\\copyproject\\remembervoca\\SlideLibrary\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 903,
+                        "endColumn": 42,
+                        "endOffset": 941
+                    }
+                }
+            }
+        ]
+    }
+]

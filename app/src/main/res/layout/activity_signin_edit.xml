@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingTop="20dp"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_userinfo_picture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 정보를 입력해 주세요."
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:textSize="12sp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#00b569"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/tv_input_email"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:background="@null"
+                        android:hint="@string/hint_email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#88007000"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1" />
+                    
+                   
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#33000000" />
+
+               <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp" >
+
+                    <EditText
+                        android:id="@+id/tv_add_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="이름"
+                        android:inputType="text"
+                        android:paddingLeft="10dp"
+                        android:textColor="#88007000" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#33000000" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#33000000" />
+
+                <EditText
+                    android:id="@+id/tv_add_birth"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@null"
+                    android:hint="생년월일(YYMMDD)"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textColor="#88007000"
+                    android:layout_marginTop="10dp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:background="#33000000" />
+
+                <RadioGroup
+                    android:id="@+id/rg_sex"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:button="@drawable/radiobuttonselector"
+                        android:checked="true"
+                        android:paddingLeft="30dp"
+                        android:text="남자"
+                        android:textColor="#88007000"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="30dp"
+                        android:button="@drawable/radiobuttonselector"
+                        android:text="여자"
+                        android:textColor="#88007000"
+                        android:textSize="15sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+              <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#00b569"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_utilization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/radiobuttonselector"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/tv_utilization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/cb_utilization"
+                    android:text="이용 약관에 동의 합니다."
+                    android:textColor="#66000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+                <CheckBox
+                    android:id="@+id/cb_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/radiobuttonselector"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/tv_collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/cb_collection"
+                    android:text="개인 정보수집에 동의 합니다."
+                    android:textColor="#66000000" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/buttonConfirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:text="입력 완료"
+                    android:textColor="#00b569"
+                    android:textSize="15sp"
+                    android:textStyle="bold" 
+                    android:background="@drawable/main_complete_btn"/>
+            </LinearLayout>
+         
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

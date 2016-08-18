@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#66ffffff"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/tv_section_date"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginLeft="9dp"
+        android:gravity="center"
+        android:text="20140321"
+        android:textColor="#b2ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

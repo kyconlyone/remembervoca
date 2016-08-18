@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:layout_marginBottom="10dp"
+    >
+    <TextView
+        android:id="@+id/tv_unknown_sample_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="unintentionally"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.69"
+        android:gravity="center_vertical|right"/>
+
+    <TextView
+        android:id="@+id/tv_unknown_sample_mean"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="가나다라마바사아자챀차나, 가dd나다, 다라라라, 마마방,아가가"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.31"/>
+
+
+</LinearLayout>

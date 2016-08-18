@@ -29,6 +29,8 @@ public class FriendRecommend_SelectDialogActivity extends Activity{
 			// TODO: handle exception
 			period = "30";
 		}
+
+
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 		setContentView(R.layout.popup_friendrecommend);

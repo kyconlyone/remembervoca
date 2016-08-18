@@ -1,0 +1,651 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hit_tuto_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.firewillanimation.HitTutoActivity" >
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_hit_master"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_hit_high"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_hit_high"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_hit_mid"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_hit_mid"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_hit_low"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/tv_tuto_hit_low"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:gravity="center"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_hit_change_level"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/qwest_choice_btn"
+        android:text="다른 레벨 단어장으로 변경하기"
+        android:textColor="#2D6C94"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_hit_confirm_select_level"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_above="@+id/bt_tuto_hit_change_level"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/wordqwest_confirm_btn"
+        android:text="적중 마스터 단어장으로 결정"
+        android:textColor="#F8F8F8"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_test_level_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_tuto_hit_confirm_select_level"
+        android:layout_below="@+id/rl_tuto_hit_setting_top"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="고르신 단어장의 난이도가\n적절하셨나요?"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/rl_tuto_hit_setting_top"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:background="#2D6C94"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tuto_hit_test_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rl_tuto_hit_wordlist_top"
+        android:visibility="invisible" >
+
+        <ListView
+            android:id="@+id/rl_tuto_hit_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@drawable/main_cell_line"
+            android:focusable="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tuto_hit_wordlist_top"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="#2D6C94"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="44dp"
+        android:paddingRight="44dp"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_wordlist_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="22dp"
+        android:text="12개 단어 암기 사용자 평균시간"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_wordlist_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="20dp"
+        android:text="03:27"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_finish_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:alpha="0.54"
+        android:background="@drawable/qwest_textbox_reward_small"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:text="완료 보상 : 93% 수능 적중 단어"
+        android:textColor="#ffffff"
+        android:textSize="9sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_setting_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_hit_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="단어장 난이도를\n선택해주세요"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_customizing_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="최적화 설정 완료"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_tuto_hit_arrow_icon"
+        android:layout_width="257dp"
+        android:layout_height="224dp"
+        android:layout_below="@+id/tv_tuto_hit_customizing_finish"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/wordqwest_reward_icon"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_setting_finish_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_tuto_hit_arrow_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="8dp"
+        android:alpha="0.87"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="이제 김기훈님만을 위해 최적화된\n수능 적중 단어장이 셋팅되었습니다."
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_finish_reward_after"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/tv_tuto_hit_setting_finish_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:alpha="0.87"
+        android:background="@drawable/qwest_textbox_reward"
+        android:gravity="center"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:text="완료 보상 : 93% 수능 적중 단어장"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_hit_quest_finish"
+        android:layout_width="fill_parent"
+        android:layout_height="58dp"
+        android:layout_below="@+id/tv_tuto_hit_finish_reward_after"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/wordqwest_reward_btn"
+        android:text="보상받기"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_temp_chathead"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginRight="27dp"
+        android:src="@drawable/willqwest_kakao_icon"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_test_start_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_tuto_hit_start_test"
+        android:layout_below="@+id/ll_tuto_hit_word_card"
+        android:alpha="0.54"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="단어장이 김기훈님의\n수준에 적절한지 간단하게 12개의 단어로\n테스트를 진행해볼게요"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_tuto_hit_word_test_end_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tuto_hit_finish_reward"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="12개 단어 테스트 완료"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_hit_memorize_time"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_hit_word_test_end_text"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="51dp"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/ll_tuto_hit_user_average_time"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:alpha="0.54"
+                    android:text="사용자 평균 시간"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.54"
+                    android:text="03 : 27"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dv_tuto_hit_time_divider"
+            android:layout_width="0.5dp"
+            android:layout_height="44dp"
+            android:alpha="0.2"
+            android:background="#ffffff"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_tuto_hit_owner_time"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_owner_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="1dp"
+                    android:text="김기훈님 시간"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_owner_memorise_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00 : 00"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_hit_word_card"
+        android:layout_width="320dp"
+        android:layout_height="178dp"
+        android:layout_below="@+id/tv_tuto_hit_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/card_basic"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="7dp"
+        android:paddingLeft="29dp"
+        android:paddingRight="29dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/tv_tuto_hit_card_master_text"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="29dp"
+            android:text="적중 마스터 단어장"
+            android:textColor="#2D6C94"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/dv_tuto_hit_card_divider_1"
+            android:layout_width="276dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#2D6C94"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_tuto_hit_card_word_count"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="단어 수"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_tuto_hit_word_count_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000개"
+                android:textColor="#2D6C94"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dv_tuto_hit_card_divider_2"
+            android:layout_width="276dp"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_tuto_hit_card_level"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="난이도"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_tuto_hit_word_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쉬움"
+                android:textColor="#2D6C94"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/dv_tuto_hit_card_divider_3"
+            android:layout_width="276dp"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/ll_tuto_hit_card_hit_rate"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="수능 적중률"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_tuto_hit_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60%"
+                android:textColor="#2D6C94"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_tuto_hit_word_card_icon"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/tv_tuto_hit_finish_reward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/feed_icon_word"
+        android:visibility="invisible" />
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_tuto_hit_start_test"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_above="@+id/bt_tuto_hit_change_level"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/wordqwest_confirm_btn"
+        android:text="테스트 하기"
+        android:textColor="#F8F8F8"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/timer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false" >
+
+        <RelativeLayout
+            android:id="@+id/percent_view_layout"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" >
+
+            <org.andlib.ui.PercentView
+                android:id="@+id/percent_view"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp" />
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/min_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:alpha="0.4"
+                            android:gravity="right|bottom"
+                            android:text="00"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:alpha="0.4"
+                            android:gravity="left|bottom"
+                            android:paddingBottom="1dp"
+                            android:paddingLeft="1dp"
+                            android:text="분"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/sec_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="27dp"
+                    android:alpha="0.2"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="11dp"
+                    android:text="00" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timer_off_layout"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/timer_top"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/today_tv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="00.00"
+                    android:textColor="#cccccc" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

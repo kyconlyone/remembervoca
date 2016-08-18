@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cell_bg"
+    android:orientation="vertical" >
+
+    <com.roomorama.caldroid.SquareTextView
+        android:id="@+id/calendar_tv"
+        style="@style/basic14sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/calendar_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:gravity="center_horizontal" />
+
+</LinearLayout>

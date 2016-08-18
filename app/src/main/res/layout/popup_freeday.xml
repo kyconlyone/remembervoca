@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tuto_end"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="218dp"
+                android:layout_height="132dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/img_gift_free24hours"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_marginBottom="16sp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="8dp"
+                android:text="그럼 이제 24시간을 불태워 볼까요?!"
+                android:textColor="#757575"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/bt_freeday_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/willqwest_confirm_btn"
+                android:text="무료로 밀당 영단어 24시간 사용하기"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/bt_freeday_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/img_secession_cancel"
+                android:text="다음에 사용하기"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+</LinearLayout>

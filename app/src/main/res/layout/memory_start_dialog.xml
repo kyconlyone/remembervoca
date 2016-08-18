@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:drawSelectorOnTop="false" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/qwest_card_popup"
+	    android:orientation="vertical" 
+	    android:gravity="center_horizontal"
+	    android:paddingBottom="40dp"
+	    android:paddingLeft="40dp"
+	    android:paddingRight="40dp">
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="48dp"
+		    android:text="완료보상 : 망각 곡선 자동 복습기"
+	        android:textSize="18sp"
+	        android:alpha="0.54"
+		    android:textColor="#000000"/>
+	
+	    <ImageView 
+	        android:layout_width="188dp"
+	        android:layout_height="188dp"
+	        android:layout_marginTop="8dp" 
+	        android:src="@drawable/forgetqwest_icon_push"/>
+	    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_marginTop="8dp"
+	    	android:gravity="center_horizontal"
+	    	android:textColor="#000000"
+	    	android:textSize="14sp"
+	    	android:lineSpacingExtra="6dp"
+	        android:alpha="0.54"
+	        android:text="망각 곡선 측정을 위한\n단어 암기법을 배워보세요!\n[망각 곡선 자동 복습기]를 드릴게요!"/>
+	    
+	    <Button 
+	        android:id="@+id/bt_tuto_memory_popup_ok"
+	        android:layout_width="match_parent"
+	        android:layout_height="62dp"
+	        android:text="확인"
+	        android:textColor="#ffffff"
+	        android:layout_marginTop="24dp"
+	        android:background="@drawable/forgetqwest_confirm_btn"/>
+	</LinearLayout>
+</LinearLayout>

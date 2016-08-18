@@ -1,0 +1,170 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ihateflyingbugs.vocaslide.ReviewTutorialActivity" >
+
+    <RelativeLayout
+        android:id="@+id/background_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.5"
+        android:background="#000000" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/first_tutorial_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="92dp"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="46dp"
+                android:background="#e0ab1c" />
+
+            <TextView
+                android:id="@+id/firstMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:text="000님이\n외운 단어들 중 000개가\n머릿속에서\n잊혀지려 합니다."
+                android:textColor="#8c8c8c" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_margin="9dp"
+                android:background="#e0ab1c" />
+
+            <Button
+                android:id="@+id/firstBtn"
+                android:layout_width="92dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                android:background="#e0ab1c"
+                android:text="확인"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="73dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/feed_icon_forget" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_tutorial_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="113dp"
+            android:background="@drawable/popup_box"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/forgeticon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="13dp"
+                        android:gravity="center|left"
+                        android:text="복습 관리 모드"
+                        android:textColor="#e1aa25"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/secondMsg"
+                android:layout_width="fill_parent"
+                android:layout_height="149dp"
+                android:layout_gravity="center|top"
+                android:background="@drawable/popup_text"
+                android:gravity="center|top"
+                android:paddingBottom="13dp"
+                android:paddingLeft="11dp"
+                android:paddingRight="11dp"
+                android:paddingTop="13dp"
+                android:text="복습관리 모드를 거칠수록\n000님의\n기억 망각 주기 정보가\n만들어집니다.\n처음엔 다소 부정확하더라도\n꾸준한 학습 부탁드립니다."
+                android:textColor="#8a000000"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/secondBtn"
+                android:layout_width="149dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/gray_btn"
+                android:text="다음"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/qwest_card_popup"
+	    android:orientation="vertical" 
+	    android:gravity="center_horizontal"
+	    android:paddingBottom="40dp"
+	    android:paddingLeft="40dp"
+	    android:paddingRight="40dp">
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="48dp"
+		    android:text="93% 적중 단어장"
+		    android:textColor="#2F6E9B"
+		    android:textSize="18sp" 
+		    android:textStyle="bold"/>
+	
+	    <ImageView 
+	        android:layout_width="188dp"
+	        android:layout_height="188dp"
+	        android:layout_marginTop="8dp" 
+	        android:src="@drawable/wordqwest_voca_icon"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_hit_tuto_reward"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_marginTop="8dp"
+	    	android:gravity="center_horizontal"
+	    	android:textColor="#000000"
+	    	android:textSize="14sp"
+	    	android:alpha="0.54"
+	    	android:lineSpacingExtra="6dp"
+	        android:text="김기훈님이 모의고사를 볼 때 마다\n또 EBS 교재가 출시될 때마다\n실시간으로 빈출단어를 정리하여\n업데이트 해드릴게요"/>
+	    
+	    <Button 
+	        android:id="@+id/bt_tuto_hit_popup_ok"
+	        android:layout_width="match_parent"
+	        android:layout_height="64dp" 
+	        android:text="확인"
+	        android:textColor="#ffffff"
+	        android:layout_marginTop="24dp"
+	        android:background="@drawable/wordqwest_confirm_btn"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/tv_coupage_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="문화 상품권 코드 번호"
+        android:textColor="#65c3b0"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_coupage_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_coupage_title"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_coupage_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_textf"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_coupage_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_coupage_list"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="해당 문화 상품권은 결제 이벤트로 발급되는\n번호입니다   5000원 짜리입니다. 감사합니다"
+        android:textSize="14sp" />
+
+</RelativeLayout>

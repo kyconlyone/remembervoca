@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tuto_pay_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg">
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_pay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_tuto_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_tuto_this_is_mainpage" />
+
+        <TextView
+            android:id="@+id/tv_tuto_pay1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="이곳이 김기훈님이\n앞으로 수능까지 단어를 암기할\n&apos;단어장 페이지&apos; 입니다."
+            android:textColor="#8A000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_tuto_pay1"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/wordqwest_confirm_btn"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_pay2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_tuto_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_tuto_pay2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="위 버튼을 누르면\n김기훈님의\n&apos;학습 관리 페이지&apos;를 볼 수 있습니다."
+            android:textColor="#8A000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_tuto_pay2"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/wordqwest_confirm_btn"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_pay3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="114dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tuto_end"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="260dp"
+                android:layout_height="220dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/img_tuto_this_is_longtouch" />
+            
+            <Button
+                android:id="@+id/bt_tuto_pay3"
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/wordqwest_confirm_btn"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:interpolator="@android:anim/linear_interpolator" >
+	
+	<translate
+	    android:fromYDelta="-775%"
+	    android:toYDelta="-525%"
+	    
+	    android:duration="292" 
+	    android:interpolator="@android:anim/linear_interpolator" />
+	
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="150%"
+	    
+	    android:duration="167" 
+	    android:startOffset="292"
+	    android:interpolator="@android:anim/linear_interpolator" />
+
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="13.6%"
+	    
+	    android:duration="42" 
+	    android:startOffset="458"
+	    android:interpolator="@android:anim/linear_interpolator" />
+	
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="37.8%"
+	    
+	    android:duration="83" 
+	    android:startOffset="500"
+	    android:interpolator="@android:anim/linear_interpolator" />
+	
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="72.5%"
+	    
+	    android:duration="125" 
+	    android:startOffset="583"
+	    android:interpolator="@android:anim/linear_interpolator" />
+    
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="41.25%"
+	    
+	    android:duration="42" 
+	    android:startOffset="708"
+	    android:interpolator="@android:anim/linear_interpolator" />
+	
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="81.25%"
+	    
+	    android:duration="167" 
+	    android:startOffset="750"
+	    android:interpolator="@android:anim/linear_interpolator" />
+
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="126.7%"
+	    
+	    android:duration="125" 
+	    android:startOffset="917"
+	    android:interpolator="@android:anim/linear_interpolator" />
+
+</set>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+    <TextView
+        android:id="@+id/tv_school_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="학교가 검색되지 않을 경우 직접 입력해 주세요"
+        android:textSize="12sp"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/bt_footer_show_input_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_searchschool_secondarywhite"
+        android:gravity="center"
+        android:text="학교와 주소 직접 입력하기"
+        android:textColor="#757575"
+        android:textSize="14sp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_footer_insert_school"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="학교명"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_footer_schoolname"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:hint="예)밀당고등학교"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                android:background="@drawable/bg_searchschool_textbggrey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="주소"
+                android:textColor="#212121"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_footer_schooladdress"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_margin="10dp"
+                android:hint="예)서울시 마포구 합정동"
+                android:textColor="#212121"
+                android:textSize="14sp" 
+                android:background="@drawable/bg_searchschool_textbggrey"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_footer_insert_school"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_searchschool_secondarywhite"
+            android:text="입력 완료"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

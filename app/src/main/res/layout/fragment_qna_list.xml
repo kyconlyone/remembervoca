@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_studylist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/qna_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#000000"
+        android:dividerHeight="0dp"
+        android:focusable="false"
+        android:paddingLeft="24dp"
+        android:paddingRight="16dp" />
+
+    <Button
+        android:id="@+id/bt_make_qna"
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:layout_weight="0"
+        android:background="#00b569"
+        android:gravity="center"
+        android:text="1:1 문의하기"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

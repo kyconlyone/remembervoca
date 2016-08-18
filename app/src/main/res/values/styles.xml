@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2013 47 Degrees, LLC
+  ~  http://47deg.com
+  ~  hello@47deg.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- List -->
+
+    <style name="ListBackContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_list</item>
+        <item name="android:background">@drawable/background_item</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ListFrontContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_list</item>
+        <item name="android:background">@color/background_list_front</item>
+        <item name="android:padding">@dimen/padding_default</item>
+    </style>
+
+    <style name="ListImage">
+        <item name="android:layout_width">@dimen/size_list_image</item>
+        <item name="android:layout_height">@dimen/size_list_image</item>
+        <item name="android:scaleGravity">fill</item>
+        <item name="android:layout_marginRight">@dimen/padding_default</item>
+    </style>
+
+    <style name="ListTitle">
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/font_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ListDescription">
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textSize">@dimen/font_size_description</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ListButtonAction">
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <!-- Settings -->
+
+    <style name="SettingTitle">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/font_size_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SettingContent">
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+        <item name="android:layout_marginLeft">@dimen/margin_setting</item>
+    </style>
+
+    <style name="SettingText">
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textSize">@dimen/font_size_description</item>
+        <item name="android:layout_marginRight">@dimen/margin_default</item>
+    </style>
+
+    <style name="Line">
+        <item name="android:background">@color/line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/line_default</item>
+    </style>
+
+    <style name="New">
+        <item name="android:textColor">@color/text_new_tag</item>
+        <item name="android:textSize">@dimen/font_size_new_tag</item>
+        <item name="android:text">@string/newTag</item>
+        <item name="android:background">@drawable/background_new_tag</item>
+        <item name="android:padding">@dimen/padding_new_tag</item>
+    </style>
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_top</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Reflect">
+        <item name="@android:windowEnterAnimation">@anim/pump_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/disappear</item>
+    </style>
+
+    <style name="StyledIndicators" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">#FF555555</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- **** 이 아래로 디자인 텍스트 수정 **** -->
+    <!-- **** 기본 스타일 설정. 기본값은 black54 **** -->
+    <style name="basic12sp">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black54</item>
+    </style>
+
+    <style name="basic14sp">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black54</item>
+    </style>
+
+    <style name="basic16sp">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black54</item>
+    </style>
+
+    <style name="basic20sp">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black54</item>
+    </style>
+
+    <style name="basic24sp">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black54</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="basic34sp">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textColor">@color/black54</item>
+    </style>
+    <!-- **** 기본 스타일 설정 끝 **** -->
+
+
+    <!-- **** 공통 스타일 시작 **** -->
+    <!-- 액션바 타이틀 -->
+    <style name="actionbarTitle" parent="@style/basic20sp">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <!-- 연한글씨 -->
+    <style name="basic12sp_light" parent="@style/basic12sp">
+        <item name="android:textColor">@color/black44</item>
+    </style>
+
+    <!-- 아주 작은 캡션 -->
+    <style name="tinyCaption_light">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black24</item>
+    </style>
+
+    <style name="tinyCaption_medium">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black54</item>
+    </style>
+
+    <!-- 팝업창 -->
+    <style name="dialogue_title" parent="@style/basic20sp"></style>
+
+    <style name="dialogue_contents" parent="@style/basic14sp">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="dialogue_contentsScroll" parent="@style/basic14sp"></style>
+
+    <!-- 버튼 -->
+    <style name="btnGrey" parent="@style/basic14sp"></style>
+
+    <style name="btnWhite" parent="@style/basic14sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 회색 배경의 체크박스 라벨 -->
+    <style name="checkboxLabel" parent="@style/basic14sp">
+        <item name="android:textColor">@color/black54</item>
+    </style>
+
+    <!-- 흰글씨87 12sp -->
+    <style name="white12sp_light" parent="@style/basic12sp">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <!-- 흰글씨100 12sp -->
+    <style name="white12sp" parent="@style/basic12sp">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 흰글씨 14sp -->
+    <style name="white14sp" parent="@style/basic14sp">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 흰글씨 14sp Bold -->
+    <style name="white14spBold" parent="@style/white14sp">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 흰글씨 16sp Bold -->
+    <style name="white16spBold" parent="@style/basic16sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 흰글씨 20sp Bold -->
+    <style name="white20spBold" parent="@style/basic20sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- **** 공통 스타일 끝 **** -->
+
+
+    <!-- **** 인스톨 시작 **** -->
+    <!-- 이동통신데이터 소비 안한다고 -->
+    <style name="install_weDoNotUseData" parent="@style/basic12sp">
+        <item name="android:textColor">@color/hit44</item>
+    </style>
+
+    <style name="install_weDoNotUseData_grey" parent="@style/basic14sp">
+        <item name="android:textColor">@color/black24</item>
+    </style>
+
+    <!-- 노랑 알람 -->
+    <style name="install_yellowNote" parent="@style/basic12sp">
+        <item name="android:textColor">@color/forget54</item>
+    </style>
+    <!-- 시스템 이름 입력 힌트 -->
+    <style name="install_nameHint" parent="@style/basic24sp">
+        <item name="android:textColor">@color/black24</item>
+    </style>
+
+    <!-- 카드 안 진행 안내문 -->
+    <style name="install_introduce" parent="@style/basic14sp"></style>
+    <!-- 설치 안내 -->
+    <style name="install_install" parent="@style/basic20sp"></style>
+
+    <!-- 입력폼 라벨 -->
+    <style name="install_inputLabel" parent="@style/basic12sp">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+
+    <!-- 입력폼 라벨 -->
+    <style name="install_will34sp" parent="@style/basic34sp">
+        <item name="android:textColor">@color/will</item>
+    </style>
+
+    <!-- **** 인스톨 끝 **** -->
+
+
+    <!-- **** 메인 단어장 시작 **** -->
+    <!-- 영어 단어 -->
+    <style name="word_basic" parent="@style/basic16sp"></style>
+    <!-- 품사 -->
+    <style name="word_form" parent="@style/basic16sp">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+    <!-- prep -->
+    <style name="word_formPrep" parent="@style/basic12sp">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/white87</item>
+    </style>
+    <!-- 한글 뜻 -->
+    <style name="word_mean" parent="@style/basic12sp">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+
+    <!-- **** 메인 단어장 끝 **** -->
+
+
+    <!-- **** 타이머 시작 **** -->
+    <!-- 타이머 볼드 텍스트 -->
+    <style name="timer_16spBold" parent="@style/basic16sp">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 타이머 진행 시간 -->
+    <style name="timer_spendTime" parent="@style/basic12sp"></style>
+    <!-- 타이머 단어 수 -->
+    <style name="timer_wordNum" parent="@style/basic12sp"></style>
+    <!-- 타이머 단어 라벨 -->
+    <style name="timer_wordLabel" parent="@style/basic12sp"></style>
+    <!-- **** 타이머 끝 **** -->
+
+
+    <!-- **** 학습피드백 메인 시작 **** -->
+    <!-- 오늘 날짜 -->
+    <style name="mainfeed_todayDate" parent="@style/white16spBold">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+    <!-- 프로필 카드 -->
+    <style name="mainfeed_profile" parent="@style/basic14sp"></style>
+    <!-- 의지제목 -->
+    <style name="mainfeed_willTitle" parent="@style/basic14sp">
+        <item name="android:textColor">@color/will</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 망각제목 -->
+    <style name="mainfeed_forgetTitle" parent="@style/basic14sp">
+        <item name="android:textColor">@color/forget</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 적중제목 -->
+    <style name="mainfeed_hitTitle" parent="@style/basic14sp">
+        <item name="android:textColor">@color/hit</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- **** 학습피드백 메인 끝 **** -->
+
+
+    <!-- **** 코치멘트 시작 **** -->
+    <!-- 코치멘트 의지 제목 -->
+    <style name="coach_willTitle" parent="@style/basic20sp">
+        <item name="android:textColor">@color/will</item>
+    </style>
+    <!-- 코치멘트 망각 제목 -->
+    <style name="coach_forgetTitle" parent="@style/basic20sp">
+        <item name="android:textColor">@color/forget</item>
+    </style>
+    <!-- 코치멘트 적중 제목 -->
+    <style name="coach_hitTitle" parent="@style/basic20sp">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+
+    <!-- 코치멘트 내용 -->
+    <style name="coach_contents" parent="@style/basic12sp">
+        <item name="android:textColor">@color/black44</item>
+    </style>
+
+    <!-- 코치멘트 내용 의지 강조 -->
+    <style name="coach_contents_will" parent="@style/coach_contents">
+        <item name="android:textColor">@color/will</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 코치멘트 내용 망각 강조 -->
+    <style name="coac_contents_forget" parent="@style/coach_contents">
+        <item name="android:textColor">@color/forget</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 코치멘트 내용 적중 강조 -->
+    <style name="coachContents_hit" parent="@style/coach_contents">
+        <item name="android:textColor">@color/hit</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 불꽃의지 코치멘트 더보기 버튼 -->
+    <style name="coach_willMore" parent="@style/basic12sp">
+        <item name="android:textColor">@color/will</item>
+    </style>
+    <!-- 망각곡선 코치멘트 더보기 버튼 -->
+    <style name="coach_forgetMore" parent="@style/basic12sp">
+        <item name="android:textColor">@color/forget</item>
+    </style>
+    <!-- 적중단어 코치멘트 더보기 버튼 -->
+    <style name="coach_hitMore" parent="@style/basic12sp">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+    <!-- **** 코치멘트 끝 **** -->
+
+
+    <!-- **** 학습피드백 각 하단 설정 **** -->
+    <!-- 하단 설정 라벨 -->
+    <style name="setting_whiteLabel" parent="@style/basic14sp">
+        <item name="android:textColor">@color/white54</item>
+    </style>
+    <!-- 하단 설정 내용(사용시간의 실제 시간 등) -->
+    <style name="setting_whiteContents" parent="@style/basic14sp">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+    <!-- **** 학습피드백 각 하단 설정 **** -->
+
+
+    <!-- **** 불꽃의지 시작 **** -->
+    <!-- 의지100 14sp -->
+    <style name="will14sp" parent="@style/basic14sp">
+        <item name="android:textColor">@color/will</item>
+    </style>
+    <!-- 의지100 16sp -->
+    <style name="will16sp" parent="@style/basic16sp">
+        <item name="android:textColor">@color/will</item>
+    </style>
+    <!-- 의지100 20sp -->
+    <style name="will20sp" parent="@style/basic20sp">
+        <item name="android:textColor">@color/will</item>
+    </style>
+    <!-- 의지100 24sp -->
+    <style name="will24sp" parent="@style/basic24sp">
+        <item name="android:textColor">@color/will</item>
+    </style>
+    <!-- 의지100 34sp -->
+    <style name="will34sp" parent="@style/basic34sp">
+        <item name="android:textColor">@color/will</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 맨 위 카드 검은 숫자값 -->
+    <style name="will_averageNum" parent="@style/basic24sp">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+    <!-- 평균 시간 설명 캡션(기간별 평균 시간:단위 분) -->
+    <style name="willCaption_hourStandard" parent="@style/basic12sp">
+        <item name="android:textColor">@color/black24</item>
+    </style>
+
+    <!-- 달력, 하루치: 목표 시간 -->
+    <style name="will_dailyGoal" parent="@style/basic12sp">
+        <item name="android:textColor">@color/will44</item>
+    </style>
+    <!-- 달력, 하루치: 하루동안 외운 단어 수 -->
+    <style name="will_dailyNum" parent="@style/basic12sp">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+    <!-- **** 불꽃의지 끝 **** -->
+
+
+    <!-- **** 망각곡선 시작 **** -->
+    <!-- 망각100 14sp -->
+    <style name="forget14sp" parent="@style/basic14sp">
+        <item name="android:textColor">@color/forget</item>
+    </style>
+    <!-- 망각100 16sp -->
+    <style name="forget16sp" parent="@style/basic16sp">
+        <item name="android:textColor">@color/forget</item>
+    </style>
+    <!-- 망각100 20sp -->
+    <style name="forget20sp" parent="@style/basic20sp">
+        <item name="android:textColor">@color/forget</item>
+    </style>
+    <!-- 망각100 24sp -->
+    <style name="forget24sp" parent="@style/basic24sp">
+        <item name="android:textColor">@color/forget</item>
+    </style>
+    <!-- 망각100 34sp -->
+    <style name="forget34sp" parent="@style/basic34sp">
+        <item name="android:textColor">@color/forget</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- **** 망각곡선 끝 **** -->
+
+
+    <!-- **** 적중단어 시작 **** -->
+    <!-- 적중100 14sp -->
+    <style name="hit14sp" parent="@style/basic14sp">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+    <!-- 적중100 14sp dark: 출제 문제집 리스트의 문제집들 -->
+    <style name="basic14sp_dark" parent="@style/basic16sp">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <!-- 적중100 16sp -->
+    <style name="hit16sp" parent="@style/basic16sp">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+    <!-- 적중100 16sp bold -->
+    <style name="hit16spBold" parent="@style/basic16sp">
+        <item name="android:textColor">@color/hit</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 적중100 20sp -->
+    <style name="hit20sp" parent="@style/basic20sp">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+    <!-- 적중100 20sp bold -->
+    <style name="hit20spBold" parent="@style/basic20sp">
+        <item name="android:textColor">@color/hit</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 적중100 24sp -->
+    <style name="hit24sp" parent="@style/basic24sp">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+
+    <!-- **** 적중단어 끝 **** -->
+
+
+    <!-- **** 챗헤드 시작 **** -->
+    <!-- 잠금화면일때 -->
+    <style name="chathead_lockScreen" parent="@style/basic14sp">
+        <item name="android:textColor">@color/white87</item>
+    </style>
+    <!-- 잠금화면 챗헤드 버튼 -->
+    <style name="Chathead_btn_confirm" parent="@style/basic14sp">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+
+    <style name="Chathead_btn_cancel" parent="@style/basic14sp">
+        <item name="android:textColor">@color/black24</item>
+    </style>
+
+    <!-- 블로그 전환 챗헤드 -->
+    <style name="chathead_blog" parent="@style/basic12sp">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!-- 불꽃의지 앱전환 챗헤드 -->
+    <style name="chathead_will" parent="@style/chathead_blog">
+        <item name="android:textColor">@color/will</item>
+    </style>
+    <!-- 망각곡선 앱전환 챗헤드 -->
+    <style name="chathead_forget" parent="@style/chathead_blog">
+        <item name="android:textColor">#997419</item>
+    </style>
+    <!-- 적중단어 앱전환 챗헤드 -->
+    <style name="chathead_hit" parent="@style/chathead_blog">
+        <item name="android:textColor">@color/hit</item>
+    </style>
+    <!-- **** 챗헤드 끝 **** -->
+
+
+    <!-- **** 설정 **** -->
+    <!-- 진한 글씨 -->
+    <style name="setting_dark" parent="@style/basic14sp">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+    <!-- 내정보 수정 -->
+    <style name="setting_myinfo" parent="@style/basic16sp">
+        <item name="android:textColor">@color/black87</item>
+    </style>
+    <!-- 탈퇴 버튼 -->
+    <style name="setting_byebtn" parent="@style/basic14sp">
+        <item name="android:textColor">@color/black24</item>
+    </style>
+
+    <!-- **** 설정 끝 **** -->
+    
+    <style name="Transparent" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+		<item name="android:windowBackground">@color/transparent</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:colorForeground">#fff</item>
+	</style>
+
+    <!-- Material Design -->
+
+    <style name="MyMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+</resources>

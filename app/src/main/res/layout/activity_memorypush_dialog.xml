@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/bg_chathead_top"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/layout_memorypush_dialog_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/memory_app_chathead" >
+
+            <TextView
+                android:id="@+id/text_memorypush_dialog_wordcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/icon_chathead_memory_small"
+                android:gravity="center"
+                android:text="11"
+                android:textColor="#E94F37"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_memorypush_dialog_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_chathead_chatbox"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/text_memorypush_dialog_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&apos;리체&apos;입니다.\n지금 외워야할 단어를 알려드릴께요~"
+                android:textColor="#A75926"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/layout_memorypush_dialog_word"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/layout_memorypush_dialog_finish"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/img_chathead_complete" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="까먹지 않게 해드릴께요\n새 단어들도 외워볼까요?"
+                android:textColor="#757575"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/img_chathead_goapp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_chathead_bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_memorypush_dialog_goapp"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@drawable/btn_chathead_goapp"
+            android:gravity="center"
+            android:text="앱에서 학습하기"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

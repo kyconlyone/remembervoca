@@ -1,0 +1,32 @@
+﻿<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" >
+
+        <com.ihateflyingbugs.hsmd.blur.TopCenterImageView
+            android:id="@+id/normal_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.ihateflyingbugs.hsmd.blur.TopCenterImageView
+            android:id="@+id/blurred_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0" />
+
+        <ListView
+            android:id="@+id/lv_feedback_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:divider="@null"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </RelativeLayout>
+
+</FrameLayout>

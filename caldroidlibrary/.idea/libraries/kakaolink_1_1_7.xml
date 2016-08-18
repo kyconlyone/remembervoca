@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="kakaolink-1.1.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RememberVoca/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.1.7/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../RememberVoca/build/intermediates/exploded-aar/com.kakao.sdk/kakaolink/1.1.7/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.kakao.sdk/kakaolink/1.1.7/b459c09c64b26396dc894f85e58a698989cbebcb/kakaolink-1.1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

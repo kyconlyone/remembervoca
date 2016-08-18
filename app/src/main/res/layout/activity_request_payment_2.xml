@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tuto_pay_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg" >
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_pay1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_tuto_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:layout_width="256dp"
+            android:layout_height="172dp" >
+
+            <ImageView
+                android:id="@+id/iv_tuto_pay1_complete"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/img_tuto_complete" />
+
+            <ImageView
+                android:id="@+id/iv_tuto_pay1_profile"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignBottom="@id/iv_tuto_pay1_complete"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="22dp"
+                android:src="@drawable/profile" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tuto_pay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="이제 김기훈님의\n영단어 마스터를 위한 준비가\n끝났습니다."
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_tuto_pay1_present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="마지막 선물로 밀당영단어\n1일 무료 체험권을 드릴게요 ^^"
+            android:textColor="#8A000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_tuto_pay1"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/willqwest_confirm_btn"
+            android:text="확인"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tuto_pay2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_friend_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_yourfriend_top"
+            android:gravity="center_horizontal" >
+            <TextView
+                android:id="@+id/tv_use_friend"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center"
+                android:text="밀당영단어를 사용중인 내 친구"
+                android:textColor="#75000000"
+                android:textSize="12sp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_friends"
+                android:layout_width="fill_parent"
+                android:layout_height="166dp"
+                android:layout_below="@id/tv_use_friend"
+                android:visibility="invisible" >
+            </android.support.v4.view.ViewPager>
+
+            <ProgressBar
+                android:id="@+id/pb_get_friendlist"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_free_period_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_friend_pager"
+            android:background="@drawable/bg_purchase_bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="6dp"
+                android:background="#90b1c9" />
+
+            <LinearLayout
+                android:id="@+id/ll_coupon_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="96dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/img_coupon_blue"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="밀당 영단어 무료 이용"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_coupon_period"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="1일 사용권"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="86dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/bt_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:background="@drawable/btn_purchase_hompage" />
+
+                    <Button
+                        android:id="@+id/bt_blog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:background="@drawable/btn_purchase_blog" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="6dp"
+                android:background="#90b1c9" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_horizontal"
+                android:text="체험기간을 통해 밀당영단어의 특별한\n기능을 사용해 보세요!"
+                android:textColor="#757575"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/bt_free_period_start"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/wordqwest_confirm_btn"
+                android:text="3일 무료사용 시작"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_request_payment"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

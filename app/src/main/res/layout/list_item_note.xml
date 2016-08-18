@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_unknown_word"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="#ffccaacc"
+        android:focusable="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_unknown_word"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_unknown_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_height"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_known_word"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="#cc88aadd"
+        android:focusable="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_known_word"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_forward_word"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="#ffaaccaa"
+        android:focusable="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_forward_word"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tv_forward_count"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_height"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</RelativeLayout>

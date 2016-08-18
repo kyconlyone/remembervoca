@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:drawSelectorOnTop="false" >
+
+    <RelativeLayout
+        android:id="@+id/push_message_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/card_terms"
+        android:paddingBottom="22dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_two_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp" >
+
+            <TextView
+                android:id="@+id/tv_two_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center_horizontal"
+                android:text="asdfasdfasdfasdf"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/vi_two_devide"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_two_title"
+                android:background="#88000000" />
+
+            <RelativeLayout
+                android:id="@+id/rl_two_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vi_two_devide"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="14dp" >
+                
+                <ProgressBar
+                    android:id="@+id/pb_two_contents"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <ScrollView
+                    android:id="@+id/sv_two_contents"
+                    android:layout_width="fill_parent"
+                    android:layout_height="220dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="#0a000000"
+                    android:padding="7dp"
+                    android:scrollbars="none" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tv_two_contents"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:text=" "
+                            android:textSize="11dp" />
+
+                    </RelativeLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/tv_two_kakaocontents"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="asdfasdfasdfasdfasdfsadfjhasdfjasldfjals;kdfj;laksdjf;lkasdjf"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_check_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_two_contents"
+                android:layout_marginTop="14dp"
+                android:text="해당 정보 접근을 허용하시겠습니까?"
+                android:textSize="11sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@id/tv_check_contents"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_no_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_cancel_popup"
+                    android:text="취 소"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="14dp"
+                    android:layout_height="fill_parent"
+                    android:background="@null" />
+
+                <Button
+                    android:id="@+id/bt_yes_popup"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_confirm_popup"
+                    android:text="확 인"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

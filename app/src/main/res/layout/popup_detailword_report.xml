@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_purchase_googlestyle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="단어에 관한 의견이 있으신가요?"
+            android:textColor="#757575"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_detailwordpopup_report_word"
+            android:layout_width="264dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:background="#dfdfdf"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Club"
+            android:textColor="#757575"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="264dp"
+            android:layout_height="108dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="#dfdfdf"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp" >
+
+            <TextView
+                android:id="@+id/text_detailwordpopup_report_wordclass"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:text="n.\nv.\nadj.\nad."
+                android:textColor="#757575"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/text_detailwordpopup_report_wordmean"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:text="모임\n춤추다\n클럽의\n클럽에의한"
+                android:textColor="#757575"
+                android:textSize="16sp" >
+            </TextView>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_detailwordpopup_report_comment"
+            android:layout_width="264dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/border_worddetail_report_comment"
+            android:gravity="center"
+            android:hint="해당 단어에 관한 수정 사항이나\n의견을 말해주세요"
+            android:textColor="#757575"
+            android:textColorHint="#757575"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="32dp" >
+
+            <Button
+                android:id="@+id/btn_detailwordpopup_report_close"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_cancel_popup"
+                android:text="취소"
+                android:textColor="#757575"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_detailwordpopup_report_report"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_confirm_popup"
+                android:text="전달"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

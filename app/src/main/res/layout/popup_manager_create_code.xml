@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:drawSelectorOnTop="false" >
+
+    <RelativeLayout
+        android:id="@+id/layout_createcode_code"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_purchase_googlestyle"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="등록번호 생성하기"
+                android:textColor="#757575"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="밀당매니저에서 회원님의 정보를 등록하기 위해서는 새로운 등록번호를 받으셔야 합니다"
+                android:textColor="#757575"
+                android:textSize="16sp" >
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_createcode_newcode"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bluebutton"
+                android:gravity="center"
+                android:text="새로운 등록번호 받기"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_manager_createcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_createcode_newcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_purchase_googlestyle"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="새등록번호"
+                android:textColor="#757575"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_createcode_newcode_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:text="00000000"
+                android:textColor="#000000"
+                android:textIsSelectable="true"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_createcode_newcode_warningmsg"
+                android:layout_width="264dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:background="@drawable/border_worddetail_report_comment"
+                android:gravity="center"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
+                android:text="팝업창을 닫으실 경우,\n등록번호 재확인은 불가능합니다.\n지금 등록을 완료하세요."
+                android:textColor="#757575"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_createcode_newcode_sendsms"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bluebutton"
+                android:gravity="center"
+                android:text="등록번호 문자 전송"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_createcode_newcode_sendkakao"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_kakao_yellow"
+                android:gravity="center"
+                android:text="등록번호 카카오톡 전송"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_createcode_newcode_close"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/btn_cancel_popup"
+                android:gravity="center"
+                android:text="닫기"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_createcode_sendsms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_purchase_googlestyle"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/text_createcode_sendsms_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="전송 받을 휴대폰 번호를 입력하세요"
+                android:textColor="#757575"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_createcode_sendsms_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/blank_name_popup"
+                android:gravity="center"
+                android:text="010"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold" >
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_createcode_sendsms_send"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bluebutton"
+                android:gravity="center"
+                android:text="등록번호 문자전송"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_createcode_sendsms_close"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_cancel_popup"
+                android:gravity="center"
+                android:text="닫기"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

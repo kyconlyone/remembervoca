@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_purchase_googlestyle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:lineSpacingExtra="8dp"
+            android:text="신청이 완료되었습니다.\n24시간 이내에 입금을 완료해 주세요."
+            android:textColor="#757575"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="앱을 다시 시작해 주세요"
+            android:textColor="#757575" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_purchase_googlestyle_mdlogo" />
+
+            <Button
+                android:id="@+id/bt_request_finish"
+                android:layout_width="130dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:background="@drawable/btn_purchase_googlestyle_green"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

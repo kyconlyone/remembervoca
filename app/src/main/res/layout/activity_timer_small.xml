@@ -1,0 +1,393 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ihateflyingbugs.vocaslide.TimerActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="0.6"
+        android:background="#cccccc" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/popupLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/timer_bg"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/system_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="9dp"
+                android:gravity="center"
+                android:text="삶은달걀님이 분석한"
+                android:textColor="#8a000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:gravity="center"
+                android:text="김민지님의 오늘 학습 성과"
+                android:textColor="#8a000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="#cccccc"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="11dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/imageLayout"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/timer_step4"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:textColor="#000000" />
+
+                    <org.andlib.ui.PercentView
+                        android:id="@+id/percentView2"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginTop="6dp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/goal_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="11dp"
+                        android:text="목표 00분"
+                        android:textColor="#8a000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/learning_time_tv"
+                        style="@style/tinyCaption_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:text="학습시간"
+                        android:textColor="#8a000000"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/learning_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="00분 00초"
+                        android:textColor="#8a000000"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/guideMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:text="목표까지 00:00\n남았어요!"
+                        android:textColor="#8a000000"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#cccccc"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp" >
+
+                <TextView
+                    android:id="@+id/new_word"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#8a000000"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/review_word"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#8a000000"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="11dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/review_need_word"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="00"
+                    android:textColor="#8a000000"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="29dp"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="새 학습 단어"
+                    android:textColor="#8a000000"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="11dp"
+                    android:layout_height="fill_parent"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="복습을 통해\n기억 연장된\n단어"
+                    android:textColor="#8a000000"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="11dp"
+                    android:layout_height="fill_parent"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|top"
+                    android:text="복습이\n필요한 단어"
+                    android:textColor="#8a000000"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/timer_set_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="단어장에 타이머 표시"
+                    android:textColor="#8a000000"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/show_timer"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/timer_btn_on" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timer_topLayout"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="18dp" >
+
+        <ImageView
+            android:id="@+id/timer_top"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/timer_top" />
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="00.00"
+            android:textColor="#cccccc" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/percentViewLayout"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false" >
+
+        <org.andlib.ui.PercentView
+            android:id="@+id/percentView1"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="2dp" />
+
+        <ImageView
+            android:id="@+id/timer_off"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/timer_top" />
+
+        <TextView
+            android:id="@+id/today_move"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="00.00"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/timeView"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="34dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center" >
+                        
+
+                        <TextView
+                            android:id="@+id/tv_goal_time_min"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="right|bottom"
+                            android:text="00"
+                            android:textColor="#8a000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="left|bottom"
+                            android:paddingBottom="1dp"
+                            android:paddingLeft="1dp"
+                            android:text="분"
+                            android:textColor="#8a000000"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_goal_time_sec"
+                    android:layout_width="fill_parent"
+                    android:layout_height="27dp"
+                    android:gravity="center|bottom"
+                    android:paddingBottom="11dp"
+                    android:text="00"
+                    android:textColor="#3d000000" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

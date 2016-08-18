@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_studylist"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#22000000" >
+
+    <LinearLayout 
+        android:id="@+id/ll_studylist_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="#88ffffff"/>
+         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|right"
+            android:paddingBottom="10dp"
+            android:text="복습단어"
+            android:textColor="#88ffffff"/>
+         
+          <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|right"
+            android:paddingBottom="10dp"
+            android:text="새학습단어"
+            android:textColor="#88ffffff"/>
+          <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="총학습량"
+            android:gravity="bottom|right"
+            android:paddingBottom="10dp"
+            android:textColor="#88ffffff"/>
+           
+    </LinearLayout>
+    <VideoView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#88ffffff"
+        android:layout_below="@id/ll_studylist_title"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"/>
+    <ListView
+        android:id="@+id/study_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ll_studylist_title"
+        android:divider="#f4f4f4"
+        android:dividerHeight="0dp"
+        android:focusable="false"
+        android:paddingBottom="50dp"/>
+
+</RelativeLayout>

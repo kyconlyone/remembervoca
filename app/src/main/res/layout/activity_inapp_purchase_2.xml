@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".tutorial.InAppPurchaseActivity" >
+
+    <ScrollView
+        android:id="@+id/sc_inapp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" >
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="24dp" >
+                
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:text="사용 가능한 내 쿠폰"
+                    android:textColor="#75000000"
+                    android:textSize="12sp" />
+                
+
+                <ListView
+                    android:id="@+id/lv_inapp_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none" >
+                
+                </ListView>
+            
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#e8eef0"
+                android:orientation="vertical"
+                android:paddingBottom="24dp" >
+                
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/inapp_bottom_repeat" />
+
+                <TextView
+                    android:id="@+id/tv_usable_coupon_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/bg_purchase_note_remain"
+                    android:text="사용 가능한 쿠폰 0개가 있습니다."
+                    android:textColor="#ffffff"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_inapp_first"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:orientation="horizontal" >
+                    
+
+                    <LinearLayout
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_purchase_left"
+                        android:gravity="center|right"
+                        android:orientation="vertical" >
+                        
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|bottom" >
+                            
+
+                            <TextView
+                                android:id="@+id/tv_inapp_first_period"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                            
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="개월"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        
+                        </LinearLayout>
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_auto_text_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*월 자동결제"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp" />
+                    
+                    </LinearLayout>
+                    
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="72dp"
+                        android:background="@drawable/btn_purchase_right"
+                        android:orientation="horizontal" >
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_first_expensive_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:background="@drawable/bg_purchase_beforefee"
+                            android:text="29,400"
+                            android:textColor="#cccccc"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_first_sale_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="4,900"
+                            android:textColor="#4d4d4d"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                        
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginTop="4dp"
+                            android:text="원"
+                            android:textSize="16sp" />
+                    
+                    </LinearLayout>
+                
+                </LinearLayout>
+                
+
+                <LinearLayout
+                    android:id="@+id/ll_inapp_second"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:orientation="horizontal" >
+                    
+
+                    <LinearLayout
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_purchase_left"
+                        android:gravity="center|right"
+                        android:orientation="vertical" >
+                        
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|bottom" >
+                            
+
+                            <TextView
+                                android:id="@+id/tv_inapp_second_period"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="6"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                            
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="개월"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        
+                        </LinearLayout>
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_auto_text_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*월 자동결제"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    
+                    </LinearLayout>
+                    
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="72dp"
+                        android:background="@drawable/btn_purchase_right"
+                        android:orientation="horizontal" >
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_second_expensive_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:background="@drawable/bg_purchase_beforefee"
+                            android:text="29,400"
+                            android:textColor="#cccccc"
+                            android:textSize="16sp" />
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_second_sale_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="24,900"
+                            android:textColor="#4d4d4d"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                        
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginTop="4dp"
+                            android:text="원"
+                            android:textSize="16sp" />
+                    
+                    </LinearLayout>
+                
+                </LinearLayout>
+                
+
+                <LinearLayout
+                    android:id="@+id/ll_inapp_third"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:orientation="horizontal" >
+                    
+
+                    <LinearLayout
+                        android:layout_width="112dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_purchase_left"
+                        android:gravity="center|right"
+                        android:orientation="vertical" >
+                        
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|bottom" >
+                            
+
+                            <TextView
+                                android:id="@+id/tv_inapp_third_period"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                            
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="개월"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+                        
+                        </LinearLayout>
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_auto_text_third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*월 자동결제"
+                            android:textColor="#ffffff"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    
+                    </LinearLayout>
+                    
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="72dp"
+                        android:background="@drawable/btn_purchase_right"
+                        android:orientation="horizontal" >
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_third_expensive_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|left"
+                            android:background="@drawable/bg_purchase_beforefee"
+                            android:text="58,500"
+                            android:textColor="#cccccc"
+                            android:textSize="16sp" />
+                        
+
+                        <TextView
+                            android:id="@+id/tv_inapp_third_sale_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text="39,000"
+                            android:textColor="#4d4d4d"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                        
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginTop="4dp"
+                            android:text="원"
+                            android:textSize="16sp" />
+                    
+                    </LinearLayout>
+                
+                </LinearLayout>
+            
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a3a3a3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:paddingLeft="44dp"
+                android:paddingRight="44dp"
+                android:paddingTop="32dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="결제 과정에 문제가 있으신가요?"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />
+            
+
+                <Button
+                    android:id="@+id/bt_another_payment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:background="@drawable/wordqwest_confirm_btn"
+                    android:text="다른 방법으로 결제하기"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/bt_utilization_payment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:background="@drawable/wordqwest_confirm_btn"
+                    android:text="이용권으로 결제하기"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="구글 인앱 결제시, 해외결제 카드 (VISA, MASTER, AMERICAN EXPRESS)가 아닌 경우 결제가 불가능합니다. 국내 카드를 가지고 계시면 다른 방법으로 결제하기를 통해 결제를 시도해 주세요."
+                    android:textColor="#212121"
+                    android:textSize="12sp" />
+        
+            </LinearLayout>
+        </LinearLayout>
+    
+    </ScrollView>
+    
+
+    <ProgressBar
+        android:id="@+id/pb_inapp_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

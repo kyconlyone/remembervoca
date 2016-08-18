@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_studylist"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_marginBottom="50dp"
+     >
+
+    <LinearLayout
+        android:id="@+id/ll_send_qna"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#aa000000"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/bt_make_qna"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/board_btn_submit"
+            android:gravity="center"
+            android:padding="0dp"
+            android:text="@string/label_send_qna"
+            android:textColor="#ccffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/qna_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_send_qna"
+        android:divider="#f4f4f4"
+        android:dividerHeight="0dp"
+        android:focusable="false"
+        android:paddingBottom="50dp" />
+
+</RelativeLayout>

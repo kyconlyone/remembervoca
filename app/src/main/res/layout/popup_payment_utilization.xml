@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_purchase_googlestyle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="쿠폰으로 결제하기"
+            android:textColor="#757575"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="일련번호를 입력해 주세요"
+            android:textColor="#757575" />
+
+        <EditText
+            android:id="@+id/et_utilization_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/bt_confirm_utilization"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_purchase_googlestyle_green"
+            android:text="쿠폰 결제"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_explain_paybankbook"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="결제 과정에 문제가 있으신가요?"
+            android:textColor="#757575" />
+
+        <Button
+            android:id="@+id/bt_qna_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/btn_purchase_googlestyle_border"
+            android:text="상담전화(02-743-8838)"
+            android:textColor="#689f38"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="평일 09:30~18:00, 점심시간 12:00~13:00\n 토,일 공휴일 휴무"
+            android:textColor="#757575"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+</RelativeLayout>

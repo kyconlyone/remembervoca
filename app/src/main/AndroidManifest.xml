@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ihateflyingbugs.hsmd"
+    android:versionCode="195"
+    android:versionName="3.10.6">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="14" />
+
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="com.ihateflyingbugs.hsmd.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.ihateflyingbugs.hsmd.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+
+        android:name="com.ihateflyingbugs.hsmd.VOCAconfig"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <activity
+            android:name=".LockActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+
+        <activity
+            android:name=".indicator.SampleCirclesSnap"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="path"
+                    android:scheme="myapp" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tutorial.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".tutorial.Tutorial_Activity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name=".tutorial.Tutorial_Test_Activity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name=".tutorial.FeedbackPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.feedback.Known_Activity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light"></activity>
+        <activity
+            android:name=".tutorial.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.ShowCard"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.JoinFriendListActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.QuitPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.RequestFinishPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.KeepCouponPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.FailPaymentPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.CompleteStudyTimePopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".tutorial.ExpainFeedPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <!--
+             <activity android:name="LockActivity"
+                android:excludeFromRecents="true"
+                android:theme="@style/Transparent"
+                android:launchMode="singleInstance"
+                android:taskAffinity=""
+                android:screenOrientation="nosensor"
+                android:configChanges="orientation|keyboardHidden|keyboard|navigation"/>
+
+
+        -->
+
+
+        <activity
+            android:name=".popup.SetGoalTimePopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+
+        <service
+            android:name=".lock.LockService"
+            android:process=":background">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="com.ihateflyingbugs.hsmd.lock.LockService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.ChatHeadService"
+            android:process=":background"></service>
+        <service
+            android:name=".service.DBService"
+            android:process=":background"></service>
+        <service android:name=".service.CheckStudyRoomService"></service>
+        <service
+            android:name=".service.LearnService"
+            android:process=":background"></service>
+
+        <receiver
+            android:name=".lock.VocaReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Alarm -->
+        <service
+            android:name=".alarm.AlarmService"
+            android:icon="@drawable/ic_launcher"
+            android:label="@string/app_name"
+            android:process="com.ihateflyingbugs.hsmd.alarm.serviceProcess"></service>
+
+        <receiver android:name=".alarm.AlarmServiceBroadcastReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AlarmAlertActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"></activity>
+
+        <receiver android:name=".alarm.AlarmAlertBroadcastReciever"></receiver>
+        <receiver android:name=".alarm.PhoneStateChangedBroadcastReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <!-- Alarm -->
+
+
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.DocPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+
+        <activity
+            android:name=".feedback.WillActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".tutorial.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ihateflyingbugs.hsmd.tutorial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".feedback.HitActivity"
+            android:label="Tabs/Styled"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feedback.MemoryExplainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".popup.GradeSelectPopUp"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".QnAActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+
+
+        </activity>
+        <activity
+            android:name=".QnAListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".feedback.FAQActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".tutorial.InstallActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"></activity>
+        <activity
+            android:name=".popup.OneButtonPopUp"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".popup.TwoButtonPopUp"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".feedback.MemoryActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".tutorial.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ihateflyingbugs.hsmd.tutorial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ChangeNameActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".feedback.SettingActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".tutorial.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ihateflyingbugs.hsmd.tutorial.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.feedback.NoticeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".feedback.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ihateflyingbugs.hsmd.feedback.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".UseActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:parentActivityName=".feedback.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ihateflyingbugs.hsmd.feedback.SettingActivity" />
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.ihateflyingbugs.hsmd" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.ihateflyingbugs.hsmd.OfflineLesson.OLData.GlideConfiguration"
+            android:value="GlideModule" />
+
+
+        <provider
+            android:name=".service.Provider"
+            android:authorities="com.ihateflyingbugs.hsmd.service.Provider"></provider>
+
+        <activity
+            android:name=".MyinfoActivity"
+            android:label="@string/title_activity_myinfo"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.feedback.BookListActivity"
+            android:label="@string/title_activity_book_list"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".TimerActivity"
+            android:label="@string/title_activity_timer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".TimerTutoActivity"
+            android:label="@string/title_activity_timer"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+
+        <activity
+            android:name=".popup.DetailWordPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".popup.DetailWord_MoreDetailPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".popup.DetailWord_ReportPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name=".ReviewTutorialActivity"
+            android:label="@string/title_activity_review_tutorial"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".KakaoLoginActivity"
+            android:label="@string/title_activity_kakao_login"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+
+        </activity>
+        <activity
+            android:name=".ScreenPopupActivity"
+            android:label="@string/title_activity_screen_popup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.feedback.BeforeHitActivity"
+            android:label="@string/title_activity_before_hit"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".animtuto.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".animtuto.WillTutoActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".animtuto.HitTutoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".animtuto.MemoryTutoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".animtuto.MemoryRewardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".animtuto.HitRewardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".animtuto.WillRewardActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".animtuto.MainTutoLastPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tutorial.InstallLastActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".feedback.TempSelectActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".animtuto.PayTutoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".tutorial.RequestPaymentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".tutorial.InAppPurchaseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.PayBankBookPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.PaymentAccountPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.KakaostoryPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.WordExamPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.GetFreeDayPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.GiftCardPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.SuccessCouponPopUp"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.StudyRoomPopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.StudyRoomUsePopup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.lock.LockScreenActivity"
+            android:screenOrientation="sensorPortrait"
+            android:showOnLockScreen="true"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.feedback.LockScreenSettingActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".feedback.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ihateflyingbugs.hsmd.feedback.SettingActivity" />
+        </activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.lock.WebViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.SetLockscreenPopUp"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.getDBtable"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent">
+
+        </activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.DBupdatePopUp"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.DBInsertPopUp"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.MemoryPushDialogActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.RequestFreeCouponPopup"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.FriendRecommend_SelectDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".manager.Manager_CreateCodePopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".manager.Manager_ReadyExamPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name=".manager.Manager_TakeExamActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:showOnLockScreen="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".manager.Manager_ExamResultActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:showOnLockScreen="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity
+            android:name=".manager.Manager_StopExamPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.EnoughStudyWordPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.manager.OnlineLessonApplyPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.manager.OnlineLessonApply_SuccessPopup"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent"></activity>
+
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.tutorial.SearchSchoolActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:showOnLockScreen="true"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+
+        </activity>
+
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.popup.ExplainBetaService"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.tutorial.RetroTestActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+
+        </activity>
+
+        <activity
+            android:name="com.ihateflyingbugs.hsmd.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+        </activity>
+
+        <activity
+            android:name=".OfflineLesson.OLActivity.OLTabActivity"
+            android:label="Tabs/Styled"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators">
+
+        </activity>
+
+        <activity
+            android:name=".OfflineLesson.OLActivity.MTTabsActivity"
+            android:theme="@style/MyMaterialTheme"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:name=".OfflineLesson.OLActivity.SampleTextPopup"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:parentActivityName=".OfflineLesson.OLActivity.OLTabActivity">
+
+
+        </activity>
+
+        <activity
+            android:name=".OfflineLesson.OLActivity.OriginWordDetailActivity"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+
+
+        </activity>
+
+    </application>
+
+</manifest>

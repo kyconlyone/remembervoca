@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:drawSelectorOnTop="false" >
+
+    <RelativeLayout
+        android:id="@+id/push_message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_doc_con"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_law_bg"
+            android:paddingBottom="15dp" >
+
+            <TextView
+                android:id="@+id/tv_doc_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:paddingLeft="10dp"
+                android:text="asdfasdfasdfasdf"
+                android:textColor="#8a000000"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:id="@+id/sv_doc_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/tv_doc_title"
+                android:layout_centerHorizontal="true"
+                android:scrollbars="none" >
+
+                <TextView
+                    android:id="@+id/tv_doc_contents"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="asdfasdfasdfasdfasdfsadfjhasdfjasldfjals;kdfj;laksdjf;lkasdjf;lkasdjf;lksadjf;lksadjf;lksadjf;lksadjf;lksajdf;lksadjfk;lasjdf;klasjdf;lkjasd;lfkjasdfkl"
+                    android:textColor="#8a000000"
+                    android:textSize="14sp" />
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_close_doc_popup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl_doc_con"
+            android:background="@drawable/bt_law_selector"
+            android:text="확 인"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

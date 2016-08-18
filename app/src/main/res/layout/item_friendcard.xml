@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_yourfriend_new"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="96dp"
+        android:layout_height="126dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_friend_card_profile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tv_friend_card_period"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="14dp"
+            android:gravity="right|center_vertical"
+            android:paddingRight="8dp"
+            android:text="밀당 1000일째"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="126dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_friend_card_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLength="10"
+                android:text="그게바로접니다."
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_friend_card_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="과천외고"
+                android:textColor="#212121"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_friend_card_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2학년"
+                android:textColor="#212121"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_friend_card_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingBottom="8dp"
+            android:gravity="left|bottom"
+            android:text="매일 10분 암기를 계획하셨습니다."
+            android:textColor="#75000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

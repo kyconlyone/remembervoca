@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <LinearLayout android:id="@+id/linearTrue"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical" android:gravity="center"
+        android:background="#88000000">
+        
+        
+        <TextView android:id="@+id/tvMeaningTrue"
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="" android:textColor="#ffffff" android:textSize="37sp"/>
+        
+        <TextView android:id="@+id/tvWordTrue"
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="" android:textColor="#ffffff" android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/linearFalse" android:visibility="invisible"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:orientation="vertical" android:gravity="center"
+        android:background="#88000000">
+        
+        <TextView android:id="@+id/tvMeaningFalse"
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:layout_marginTop="20sp"
+        	android:text="" android:textColor="#ffffff" android:textSize="37sp"/>
+        
+        <TextView android:id="@+id/tvWordFalse"
+        	android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:text="" android:textColor="#ffffff" android:textSize="30sp"/>
+        
+    </LinearLayout>
+    
+    
+    <FrameLayout
+        android:id="@+id/graphics_holder"
+        android:layout_height="match_parent" android:layout_width="match_parent"
+        android:orientation="vertical">
+    </FrameLayout>
+    
+    <!-- <LinearLayout
+        android:id="@+id/graphics_holder"
+        android:layout_height="match_parent" android:layout_width="match_parent"
+        android:orientation="vertical">
+    	
+        <LinearLayout
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal">
+	        
+            <TextView android:id="@+id/tvHour"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="00" android:textSize="120sp" android:textColor="#000000"/>
+            
+            <TextView 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text=":" android:textSize="100sp" android:textColor="#000000"/>
+            
+        	<TextView android:id="@+id/tvMinute"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="00" android:textSize="120sp" android:textColor="#000000"/>
+        	
+		</LinearLayout>
+			
+        <TextView android:id="@+id/tvDate"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:text="10월 4일 금요일" android:textSize="20sp" android:textColor="#000000"/>
+        
+        <TextView android:id="@+id/tvWord"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="a" android:textSize="100sp" android:textColor="#000000"
+			android:layout_gravity="center"/>
+        
+    </LinearLayout> -->
+</RelativeLayout>

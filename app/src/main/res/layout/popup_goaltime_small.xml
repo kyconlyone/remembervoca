@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:drawSelectorOnTop="false" >
+
+    <RelativeLayout
+        android:id="@+id/rl_setgoal_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp" >
+
+        <LinearLayout
+            android:id="@+id/rl_goal_con"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/login_law_bg"
+            android:orientation="vertical"
+            android:paddingBottom="13dp" >
+
+            <TextView
+                android:id="@+id/tv_goal_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="11dp"
+                android:gravity="center_horizontal"
+                android:paddingLeft="9dp"
+                android:text="목표시간을 설정해주세요"
+                android:textColor="#9f000000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                    android:id="@+id/rg_settime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_goal_title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="0.5"
+                    android:paddingTop="11dp"
+                    android:paddingRight="5dp"
+                    android:gravity="center|right">
+
+                    <RadioButton
+                        android:id="@+id/radio_10minute"
+                        android:layout_width="25dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="11dp"
+                        android:button="@drawable/chk_goaltime"
+                        android:textColor="#99000000" />
+
+                    <RadioButton
+                        android:id="@+id/radio_15minute"
+                        android:layout_width="25dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="11dp"
+                        android:button="@drawable/chk_goaltime"
+                        android:checked="true"
+                        android:textColor="#99000000" />
+
+                    <RadioButton
+                        android:id="@+id/radio_30minute"
+                        android:layout_width="25dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="11dp"
+                        android:button="@drawable/chk_goaltime"
+                        android:textColor="#99000000" />
+
+                    <RadioButton
+                        android:id="@+id/radio_minute_etc"
+                        android:layout_width="25dp"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="11dp"
+                        android:button="@drawable/chk_goaltime"
+                        android:textColor="#99000000" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" 
+                    android:paddingTop="11dp"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_10minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="10분"
+                        android:textColor="#9f000000" />
+
+                    <TextView
+                        android:id="@+id/tv_15minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="15분"
+                        android:textColor="#9f000000" />
+
+                    <TextView
+                        android:id="@+id/tv_30minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_marginBottom="11dp"
+                        android:text="30분"
+                        android:textColor="#9f000000" />
+
+                    <EditText
+                        android:id="@+id/et_minute_etc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:focusable="true"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" 
+                        android:maxLength="3"
+                        android:hint="사용자 정의"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_close_popup"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_below="@id/rl_goal_con"
+            android:background="#888888"
+            android:text="확 인"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

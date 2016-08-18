@@ -1,0 +1,320 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/btn_detailwordpopup_report"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/btn_word_report" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_wordpopup_top"
+            android:orientation="vertical" >
+
+            <!-- Word Title -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_word"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_wordpopup_flag"
+                    android:gravity="center"
+                    android:paddingLeft="22dp"
+                    android:text="suffeddddddddddr"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_detailwordpopup_word"
+                    android:layout_width="44dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="22dp"
+                    android:background="@drawable/img_wordpopup_forget" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="#2d526f" />
+
+            <!-- 처음, 복습 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="12dp"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_firstmemory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="첫 학습 단어"
+                    android:textColor="#7e7e7e"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!-- 오답률 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_detailwordpopup_special"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/bg_wordpopup_special"
+                android:clickable="false"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_specialword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="전국고등학생 오답률"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_specialper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/text_detailwordpopup_specialrate"
+                    android:layout_alignParentRight="true"
+                    android:text="%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/text_detailwordpopup_specialrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@id/text_detailwordpopup_specialper"
+                    android:gravity="center_vertical"
+                    android:text="55"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- 망각확률 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_detailwordpopup_memory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/bg_wordpopup_memory"
+                android:clickable="false"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_memoryword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="현재 망각확률"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_memoryper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/text_detailwordpopup_memoryrate"
+                    android:layout_alignParentRight="true"
+                    android:text="%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/text_detailwordpopup_memoryrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@id/text_detailwordpopup_memoryper"
+                    android:gravity="center_vertical"
+                    android:text="68"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- 출제확률 -->
+
+            <RelativeLayout
+                android:id="@+id/layout_detailwordpopup_target"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/bg_wordpopup_target"
+                android:clickable="false"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_targetword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="2016 수능 출제 확률 "
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_targetper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/text_detailwordpopup_targetrate"
+                    android:layout_alignParentRight="true"
+                    android:text="%"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/text_detailwordpopup_targetrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@id/text_detailwordpopup_targetper"
+                    android:gravity="center_vertical"
+                    android:text="55"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <!-- 현재 출제율 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:clickable="false" >
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_hityear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2011-2016학년도 "
+                    android:textColor="#d2d2d2"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_detailwordpopup_hitcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/text_detailwordpopup_hityear"
+                    android:text="33회 출제"
+                    android:textColor="#7e7e7e"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/text_detailwordpopup_hitcount"
+                    android:text="EBS, 수능, 평가원 모의고사"
+                    android:textColor="#7e7e7e"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- 출제내역 상세보기 -->
+
+        <LinearLayout
+            android:id="@+id/layout_detailwordpopup_hitinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_wordpopup_bottom"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="출제 내역 상세보기"
+                    android:textColor="#bdbdbd"
+                    android:textSize="12sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_detailwordpopup_hitinfo"
+                    android:layout_width="65dp"
+                    android:layout_height="29dp"
+                    android:background="@drawable/offbutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <!-- Hit List -->
+
+            <ListView
+                android:id="@+id/list_detailwordpopup_hitinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="132dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:clickable="false"
+                android:divider="#3e617c"
+                android:dividerHeight="0px"
+                android:longClickable="false"
+                android:paddingBottom="11dp"
+                android:paddingTop="11dp"
+                android:scrollbars="none"
+                android:visibility="gone" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

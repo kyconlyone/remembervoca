@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_tuto_end"
+    android:orientation="vertical" 
+    android:layout_gravity="center">
+    
+    <TextView
+        android:id="@+id/text_friendrecommend_content"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#8A000000"
+        android:text="빨리 가려면 혼자 가고 \n멀리 가려면 같이 가라\n\n함께 단어 공부하고 싶은\n친구 5명을 선택해 주세요.\n30일 무료 사용권을 모두 드릴게요^^" />
+    
+    <Button
+        android:id="@+id/btn_friednrecommend_select"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/willqwest_confirm_btn" 
+        android:textColor="#FFFFFF"
+        android:text="선택하러가기"/>
+    
+
+</LinearLayout>

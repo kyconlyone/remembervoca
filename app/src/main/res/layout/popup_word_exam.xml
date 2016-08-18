@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_wordexam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_wordtest_top"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_wordexam_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="72dp"
+                    android:background="@drawable/bg_achieve_title"
+                    android:gravity="center"
+                    android:text="김민지님, 현재 전국 단어\n모의고사가 진행되고 있습니다."
+                    android:textColor="#3B1E1E"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="268dp"
+                    android:layout_height="108dp"
+                    android:layout_gravity="center_horizontal" >
+
+                    <ImageView
+                        android:layout_width="268dp"
+                        android:layout_height="108dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/img_wordtest_logo" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_purchase_bottom"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:lineSpacingExtra="8dp"
+                    android:text="1분간의 	간단한 단어 테스트를 통해\n현재 1200명의 전국 밀당 학생들 중\n자신의 단어 실력 순위를 확인 해보세요\n문화상품권도 받으실수 있습니다." />
+
+                <Button
+                    android:id="@+id/bt_wordexam_confirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:background="@drawable/btn_wordtest_start"
+                    android:text="확 인"
+                    android:textColor="#60484a"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/bt_wordexam_cancel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:background="@drawable/img_secession_cancel"
+                    android:text="참가하지 않고 단어 외우기"
+                    android:textColor="#60484a"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

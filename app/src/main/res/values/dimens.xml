@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="default_margin">12dip</dimen>
+
+    <!-- Default -->
+    <dimen name="radius_default">3dp</dimen>
+    <dimen name="padding_default">8dp</dimen>
+    <dimen name="margin_default">5dp</dimen>
+    <dimen name="line_default">1dp</dimen>
+
+    <!-- Products -->
+    <dimen name="height_list">90dp</dimen>
+    <dimen name="size_list_image">64dp</dimen>
+    <dimen name="font_size_title">17sp</dimen>
+    <dimen name="font_size_description">15sp</dimen>
+    <dimen name="margin_setting">20dp</dimen>
+    <dimen name="font_size_new_tag">11sp</dimen>
+    <dimen name="padding_new_tag">3dp</dimen>
+    <dimen name="item_height">72dp</dimen>
+    <dimen name="section_div_height">20dp</dimen>
+    <dimen name="slidingmenu_offset">48dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <dimen name="lock_time_font_size">70px</dimen>
+    <dimen name="lock_day_font_size">30px</dimen>
+    <dimen name="lock_word_font_size">85px</dimen>
+    <dimen name="lock_guide_font_size">33px</dimen>
+    <dimen name="lock_time_font_large_size">80px</dimen>
+    <dimen name="lock_day_font_large_size">40px</dimen>
+    <dimen name="lock_word_font_large_size">95px</dimen>
+    <dimen name="lock_guide_font_large_size">43px</dimen>
+    <dimen name="big_demen">32dp</dimen>
+    <dimen name="small_demen">23dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Material design-->
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:drawSelectorOnTop="false" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/card_popup"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/text_managerexam_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="등록된 시험을 찾고 있습니다."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_managerexam_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/btn_managerexam_exam"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_cancel_popup"
+            android:gravity="center"
+            android:text="시험보기"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_managerexam_close"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_cancel_popup"
+            android:gravity="center"
+            android:text="닫기"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

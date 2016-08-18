@@ -1,0 +1,138 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_studylist"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#22000000">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="36dp"
+            android:text="밀당 영단어장 변경"
+            android:textColor="#ffffff"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="#66000000"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#b2ffffff" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:orientation="horizontal" >
+
+            <RadioGroup
+                android:id="@+id/rg_choice_cate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="17dp"
+                    android:background="#99ffffff" />
+
+                <RadioButton
+                    android:id="@+id/rb_choice_sat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:button="@drawable/chk_setting_3"
+                    android:text="  수능 영어"
+                    android:textColor="#ffffff"
+                    android:textSize="27sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#99ffffff" />
+
+                <RadioButton
+                    android:id="@+id/rb_choice_toeic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:button="@drawable/chk_setting_3"
+                    android:text="  TOEIC"
+                    android:textColor="#99ffffff"
+                    android:textSize="27sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#99ffffff" />
+
+                <RadioButton
+                    android:id="@+id/rb_choice_toefl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:button="@drawable/chk_setting_3"
+                    android:text="  TOEFL"
+                    android:textColor="#99ffffff"
+                    android:textSize="27sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#33ffffff" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_choice_cate"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="36dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/board_btn_submit"
+            android:text="밀당 영단어장 변경하기"
+            android:textColor="#ccffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_levellist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+  
+    <ListView
+        android:id="@+id/level_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#f4f4f4"
+        android:dividerHeight="0dp"
+        android:focusable="false" />
+
+</RelativeLayout>

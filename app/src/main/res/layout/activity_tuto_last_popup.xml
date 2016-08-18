@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:drawSelectorOnTop="false" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qwest_card_popup"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_centerInParent="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:alpha="0.87"
+            android:text="수고하셨습니다!"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_reward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:alpha="0.54"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="이제 처음의 의지를 잊지 않으면서\n최고 적중단어를 외우고\n망각곡선 측정을 통한\n완벽한 자동 복습 시스템으로\n수능 영단어를 마스터하러 가볼까요?"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_last_tuto_popup_ok"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/redbutton"
+            android:textSize="14sp"
+            android:text="단어장으로 이동하기"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+    
+    <ProgressBar
+        android:id="@+id/pb_splash_tuto"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

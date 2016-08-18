@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tuto_pay_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rl_join_friendlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_yourfriend_top"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_join_friendlist_title"
+                android:layout_width="fill_parent"
+                android:layout_height="22dp"
+                android:text="알수도 있는 친구가 가입하였습니다."
+                android:textColor="#757575" 
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:textSize="12sp"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_join_friendlist"
+                android:layout_below="@id/tv_join_friendlist_title"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:visibility="invisible" >
+            </android.support.v4.view.ViewPager>
+
+            <ProgressBar
+                android:id="@+id/pb_join_friendlist"
+                android:layout_below="@id/tv_join_friendlist_title"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_purchase_bottom" >
+
+            <Button
+                android:id="@+id/bt_join_friendlist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_feed_coupon"
+                android:padding="8dp"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

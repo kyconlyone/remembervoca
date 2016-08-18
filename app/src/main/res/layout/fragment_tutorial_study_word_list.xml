@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_test_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_tuto_study_title"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:lineSpacingExtra="13dp"
+        android:text="머신러닝 세팅을 위해 \n5개의 단어를 모두 외워주세요"
+        android:textColor="#999999"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/ll_test_fb_notice"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:visibility="invisible" >
+
+        <ScrollView
+            android:id="@+id/sv_test_fb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_test_feedback"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="19dp"
+                    android:paddingTop="15dp"
+                    android:lineSpacingExtra="13dp"
+                    android:textColor="#999999"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/iv_test_fb_front"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/tuto_test_cover" />
+
+        <ImageView
+            android:id="@+id/iv_test_fb_right"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_shadow_top"
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/ll_test_fb_notice"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tuto_shadow" />
+
+    <Button
+        android:id="@+id/bt_finish_test"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/tuto_test_btn_exit"
+        android:text="테스트 끝내기" 
+        android:textColor="#dddddd"/>
+
+    <ListView
+        android:id="@+id/lv_test_toturial"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bt_finish_test"
+        android:layout_below="@id/iv_shadow_top"
+        android:divider="@drawable/main_cell_line"
+        android:focusable="false" />
+
+    <ProgressBar
+        android:id="@+id/pg_tuto"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="#33000000"
+        android:padding="100dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

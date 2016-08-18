@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Pagerlibrary/Pagerlibrary.iml" filepath="$PROJECT_DIR$/../Pagerlibrary/Pagerlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RememberVoca/RememberVoca.iml" filepath="$PROJECT_DIR$/../RememberVoca/RememberVoca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SlideLibrary/SlideLibrary.iml" filepath="$PROJECT_DIR$/../SlideLibrary/SlideLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/caldroidlibrary.iml" filepath="$PROJECT_DIR$/caldroidlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../facebook/facebook.iml" filepath="$PROJECT_DIR$/../facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../project.iml" filepath="$PROJECT_DIR$/../project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sdk/sdk.iml" filepath="$PROJECT_DIR$/../sdk/sdk.iml" />
+    </modules>
+  </component>
+</project>

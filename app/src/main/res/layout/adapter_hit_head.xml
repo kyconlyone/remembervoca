@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                style="@style/tinyCaption_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="업데이트 기준 안내" />
+
+            <TextView
+                style="@style/tinyCaption_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="단어장은 매년 갱신되는 EBS문제집, 수능, 평가원 모의고사를 기반으로 업데이트됩니다." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <TextView
+                style="@style/tinyCaption_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="단어 분류 기준 안내" />
+
+            <TextView
+                style="@style/tinyCaption_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="본 통계에는 조동사, 관계사, 비동사, 관사가 제거되어있으며, 모든 단어는 단수형, 현재형으로 취급하였습니다." />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

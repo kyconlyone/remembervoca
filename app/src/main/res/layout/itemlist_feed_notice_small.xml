@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_feed_notice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_notice_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_feed_notice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="하하하하"
+                android:textColor="#8a000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_feed_notice_day"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="03/01"
+                android:textColor="#8a000000"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/direction"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0"
+            android:background="@drawable/icon_faqsettingpage_pressicon_normal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_feed_notice_contents"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:text="난 너를 믿었던 만큼 난 내 친구도 믿었기에 난 아무런 부담 없이 널 내 친구에게 소개 시켜줬고 그런 만남이 있은 후 로부터 우리는 자주 함께 만나며 즐거운 시간을 보내며 함께 어울렸던 것뿐인데"
+        android:textColor="#de000000"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:background="#66ffffff" />
+
+</LinearLayout>

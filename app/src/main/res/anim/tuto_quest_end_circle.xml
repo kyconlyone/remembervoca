@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:startOffset="1083">
+    <!-- 시작시간이 23프레임(958ms)으로 되어있는데 소스에서 어떤방식으로 동작할지 잘 몰라서 일단 23프레임만큼의 startOffset은 넣지 않았습니다. -->
+    <!-- 23프레임으로부터 또다시 12프레임 후에 시작하게 되어 있어서 12프레임(1083ms)만큼 startOffset을 주었습니다. -->
+    <!--  -->
+    <alpha 
+	    android:fromAlpha="0.0"
+	    android:toAlpha="1.0"
+	    
+	    android:duration="83"/>
+ 
+    <scale
+	    android:fromXScale="0.04"
+	    android:toXScale="0.3"
+	    
+	    android:fromYScale="0.04"
+	    android:toYScale="0.3"
+	    
+	    android:pivotX="50"
+	    android:pivotY="50"
+	    
+	    android:startOffset="42"
+	 	android:duration="125" >
+    </scale>
+    
+    <scale
+	    android:fromXScale="1.0"
+	    android:toXScale="5.34"
+	    
+	    android:fromYScale="1.0"
+	    android:toYScale="5.34"
+	    
+	    android:pivotX="50"
+	    android:pivotY="50"
+	    
+	    android:startOffset="167"
+	 	android:duration="167" >
+    </scale>
+    
+    <scale
+	    android:fromXScale="1.0"
+	    android:toXScale="1.125"
+	    
+	    android:fromYScale="1.0"
+	    android:toYScale="1.125"
+	    
+	    android:pivotX="50"
+	    android:pivotY="50"
+	    
+	    android:startOffset="333"
+	 	android:duration="167" >
+    </scale>
+    
+    <scale
+	    android:fromXScale="1.0"
+	    android:toXScale="1.056"
+	    
+	    android:fromYScale="1.0"
+	    android:toYScale="1.056"
+	    
+	    android:pivotX="50"
+	    android:pivotY="50"
+	    
+	    android:startOffset="500"
+	 	android:duration="208" >
+    </scale>
+</set>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:drawSelectorOnTop="false" >
+
+    <RelativeLayout
+        android:id="@+id/rl_tupop_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_tupop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuto_popup_bg"
+            android:paddingBottom="13dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_tupop_word"
+                android:layout_width="fill_parent"
+                android:layout_height="36dp"
+                android:layout_margin="9dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_tupop_word"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="asdfasdfasdfasdf"
+                    android:textColor="#666666"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_popup_mark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tuto_popup_ques"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/ll_tupop_word"
+                android:background="#88000000" />
+
+            <TextView
+                android:id="@+id/tv_tupop_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_margin="9dp"
+                android:gravity="center"
+                android:paddingTop="9dp"
+                android:text="asdfasdfasdfasdf"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_tupop_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tupop_title"
+                android:layout_margin="9dp"
+                android:gravity="center"
+                android:paddingLeft="27dp"
+                android:paddingRight="27dp"
+                android:text="asdfasdfasdfasdfasdfsadfjhasdfjadfkl"
+                android:textColor="#666666"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/tv_tupop_contents"
+                android:background="#88000000" />
+
+            <Button
+                android:id="@+id/bt_close_tutopopup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:background="#aa00b569"
+                android:padding="7dp"
+                android:text="확인"
+                android:textColor="#aaffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

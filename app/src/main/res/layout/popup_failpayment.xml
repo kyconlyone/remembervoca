@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp"
+            android:text="결제 과정에 문제가 있으신가요?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#757575" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="카드  결제에 문제가 있으신가요?"
+            android:textStyle="bold" 
+            android:textColor="#757575"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="24dp"
+            android:text="구글 인앱 결제의 경우는 해외결제카드 (VISA,Master,American express)가 아닌경우 결제를 진행할 수 없습니다. 국내 일반 카드를 가지고 계시다면 다른 방법으로 결제를 진행해 주세요." 
+            android:textColor="#757575"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="통신사 결제에 문제가 있으신가요??"
+            android:textStyle="bold"
+            android:textColor="#757575" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="24dp"
+            android:text="결제를 시도하는 핸드폰의 소유자가 미성년자일 경우 결제를 진행할 수 없습니다. 신용/직불카드로 다시 시도해보시거나, 다른 방법으로 결제를 진행해 주세요." 
+            android:textColor="#757575"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_failpayment_retry"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="24dp"
+                android:layout_weight="1"
+                android:textColor="#689f38"
+                android:textSize="14sp"
+                android:text="다시 시도"
+                android:background="@drawable/btn_purchase_googlestyle_border" />
+
+            <Button
+                android:id="@+id/bt_failpayment_bankbook"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:text="무통장 입금"
+                android:background="@drawable/btn_purchase_googlestyle_green" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

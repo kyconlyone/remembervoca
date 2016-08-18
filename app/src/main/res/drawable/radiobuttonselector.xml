@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<item
+		android:state_checked="true"
+		android:state_pressed="true"
+		android:drawable="@drawable/checkedbutton"
+		 />
+	<!-- 선택되어져 있을때 -->
+	<item
+		android:state_checked="true"
+		android:drawable="@drawable/checkedbutton"
+		 />
+	<!-- 선택되지 않은 옵션이 눌러졌을때 -->
+	<item
+		android:state_checked="false"
+		android:state_pressed="true"
+		android:drawable="@drawable/uncheckedbutton"
+		 />
+	<!-- 선택되지 않은것에 초점이 맞은경우 -->
+	<item
+		android:state_focused="true"
+		android:state_checked="false"
+		android:state_pressed="false"
+		android:drawable="@drawable/checkedbutton"
+		 />
+	<!-- 선택되지 않은 옵션의 기본상태 -->
+	<item
+		android:state_checked="false"
+		android:drawable="@drawable/uncheckedbutton"
+		/>
+</selector>

@@ -1,0 +1,30 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ihateflyingbugs.hsmd.LastInstallActivity" >
+
+    <ImageView
+        android:layout_width="242dp"
+        android:layout_height="384dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_weight="0"
+        android:src="@drawable/closingpage_img" />
+
+
+    <org.andlib.ui.CircleAnimationView
+        android:id="@+id/bt_confirm"
+        android:layout_width="242dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="27dp"
+        android:layout_weight="0"
+        android:background="@drawable/redbutton"
+        android:gravity="center"
+        android:text="시작"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

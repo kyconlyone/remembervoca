@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="9dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hit_percentage_countTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="right|bottom"
+                        android:text="93%"
+                        android:textColor="#000000"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:id="@+id/hit_percentage_Tv"
+                        android:layout_width="46dp"
+                        android:layout_height="match_parent"
+                        android:gravity="left|bottom"
+                        android:text="적중"
+                        android:textColor="#000000"
+                        android:textSize="10pt" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/grade_1_hit_percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:text="1  등급 예상단어 3.2%"
+                        android:textColor="#000000"
+                        android:textSize="7pt" />
+
+                    <TextView
+                        android:id="@+id/grade_2_hit_percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:text="2-3등급 예상단어 3.2%"
+                        android:textColor="#000000"
+                        android:textSize="7pt" />
+
+                    <TextView
+                        android:id="@+id/grade_3_hit_percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:text="4-5등급 예상단어 3.2%"
+                        android:textColor="#000000"
+                        android:textSize="7pt" />
+
+                    <TextView
+                        android:id="@+id/grade_4_hit_percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:text="6-7등급 예상단어 3.2%"
+                        android:textColor="#000000"
+                        android:textSize="7pt" />
+
+                    <TextView
+                        android:id="@+id/grade_5_hit_percentage"
+                        android:layout_width="match_parent"
+                        android:layout_height="23dp"
+                        android:text="8-9등급 예상단어 3.2%"
+                        android:textColor="#000000"
+                        android:textSize="7pt" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/hit_percentage"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent" 
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <org.andlib.ui.HitPercentView
+                    android:id="@+id/pv_exampercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="18dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

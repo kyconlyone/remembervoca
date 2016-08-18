@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="22dp"
+        android:background="#3a75a0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/hit16spBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="2015학년도\n수학능력검정시험" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/basic12sp"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+			android:gravity="bottom|right"
+            android:layout_weight="1"
+            android:text="2015.11.12 시행" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="266dp"
+        android:layout_height="184dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/hit_this_test_hit_ratio_sooneong" />
+
+</LinearLayout>

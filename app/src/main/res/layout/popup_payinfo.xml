@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/payment_bg"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_get_friendlist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_yourfriend_top"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_use_friend"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="13dp"
+                android:gravity="center"
+                android:text="내 주변 성적 우수 사용자"
+                android:textColor="#75000000"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bt_use_lockscreen"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/btn_setting_icon" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager_friends"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_below="@+id/tv_use_friend"
+                android:visibility="invisible" >
+            </android.support.v4.view.ViewPager>
+
+            <ProgressBar
+                android:id="@+id/pb_get_friendlist"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_purchase_expired"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_purchase_expired"
+            android:gravity="center"
+            android:text="무료 사용 기간이 만료되었습니다."
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_purchase_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_purchase_bottom"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#f3a59a" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/img_price_top"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="32dp"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginLeft="48dp"
+                                    android:text="1개월"
+                                    android:textColor="#ffffff"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="32dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_alignParentTop="true"
+                                    android:paddingRight="4dp"
+                                    android:paddingTop="4dp"
+                                    android:text="최저가"
+                                    android:textColor="#75ffffff"
+                                    android:textSize="12sp" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:id="@+id/tv_least_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="\u20A94900"
+                                    android:textColor="#ffffff"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="12dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/price_bottom_repeat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/bt_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_purchase_hompage" />
+
+                        <Button
+                            android:id="@+id/bt_blog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_purchase_blog" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#f3a59a" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/bt_tuto_pay2_kakao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_purchase_parent"
+                        android:text="부모님께 결제 요청"
+                        android:textColor="#60484a"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/bt_tuto_pay2_question"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="@drawable/btn_purchase_parent_info" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_tuto_pay2_purchase"
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:background="@drawable/willqwest_confirm_btn"
+                    android:text="지금 결제하기"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_tuto_withdraw"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignBottom="@id/ll_purchase_bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:background="#00ffffff"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="2dp"
+                android:text="회원 탈퇴"
+                android:textColor="#0000ff"
+                android:textSize="12sp"
+                android:visibility="visible" />
+            
+             <Button
+                android:id="@+id/bt_use_studyroom"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignBottom="@id/ll_purchase_bottom"
+                android:layout_marginBottom="20dp"
+                android:background="#00ffffff"
+                android:text="독서실 무료 사용이 안되시나요?"
+                android:layout_alignParentRight="true"
+                android:textColor="#757575"
+                android:textSize="12sp"
+                android:layout_marginRight="40dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

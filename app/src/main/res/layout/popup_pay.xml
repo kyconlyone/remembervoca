@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:drawSelectorOnTop="false" >
+
+    <RelativeLayout
+        android:id="@+id/rl_pay_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tuto_popup_bg"
+            android:paddingBottom="15dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_pay_word"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_pay_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="xxx님의 \n머신러닝 기본 세팅 및 \n사용법 학습을 완료 했습니다"
+                    android:textColor="#666666"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/ll_pay_word"
+                android:background="#22000000" 
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_pay_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginTop="10dp"
+                android:textColor="#aa00b569"
+                android:gravity="center"
+                android:text="밀당 영단어의 머신러닝과 함께"
+                android:textSize="19sp" />
+
+         
+
+            <Button
+                android:id="@+id/bt_close_tutopopup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_pay_contents"
+                android:background="@drawable/tuto_popup_white_btn"
+                android:text="수능 영어 정복하러 가기"
+                android:textColor="#aa00b569"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

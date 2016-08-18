@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="19dp"
+        android:background="@drawable/feed_card_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="공지사항"
+                android:textColor="#44ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+            <ImageButton
+                android:id="@+id/iv_feed_notice"
+               android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/feed_card_btn"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_marginTop="32dp">
+
+            <TextView
+                android:id="@+id/tv_feed_notice_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="40"
+                android:text="하하하하"
+                android:textColor="#ffffff"
+                android:textSize="23sp"
+                android:textStyle="bold" 
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_feed_notice_contents"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="56"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="난 너를 믿었던 만큼 난 내 친구도 믿었기에\n난 아무런 부담 없이 널 내 친구에게 소개 시켜줬고\n그런 만남이 있은 후 로부터 우리는 자주 함께 만나며\n즐거운 시간을 보내며 함께 어울렸던 것뿐인데"
+                android:textColor="#a0ffffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

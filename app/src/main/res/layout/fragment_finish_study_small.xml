@@ -1,0 +1,87 @@
+﻿<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_finish_study"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="184dp"
+            android:layout_height="64dp"
+            android:src="@drawable/main_complete_logo"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="18dp"
+            android:background="#00b569" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_finish_study_cong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="13dp"
+                android:text="축하합니다\n밀당영단어의 모든 단어를\n마스터하셨습니다."
+                android:textColor="#00b569"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginTop="18dp"
+            android:background="#00b569" />
+
+        <TextView
+            android:id="@+id/tv_finish_study_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/bt_finish_study_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/main_complete_btn"
+            android:text="다음 단어 공부하기"
+            android:textColor="#00b569"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/bt_finish_study_destory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/main_complete_btn"
+            android:text="학습 종료하기"
+            android:textColor="#00b569" 
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

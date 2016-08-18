@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_actionbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_actionbar"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <CheckBox
+            android:id="@+id/chkSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+            android:background="@drawable/main_actionbar_icon"
+            android:checked="true"
+            android:button="@null" />
+         <ImageView
+                android:id="@+id/view_topnavi"
+                android:layout_width="55dp"
+                android:layout_height="27dp"
+                android:layout_centerInParent="true"
+                android:paddingLeft="18dp"
+                android:src="@drawable/animation_large_left"
+                android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_action_review"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/iv_action_review"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:src="@drawable/main_actionbar_reicon" />
+
+            <TextView
+                android:id="@+id/tv_action_review"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="256"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <RadioButton
+                android:id="@+id/btnKnown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/btn_actionbar_known"
+                android:button="@null"
+                android:soundEffectsEnabled="false" />
+
+            <RadioButton
+                android:id="@+id/btnScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/btn_actionbar_score"
+                android:button="@null"
+                android:checked="true"
+                android:soundEffectsEnabled="false" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="설정"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/chkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2dp"
+        android:layout_weight="0"
+        android:background="@drawable/btn_actionbar_exam"
+        android:button="@null"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg"
+    android:orientation="vertical" >
+    <ImageButton 
+        android:id="@+id/bt_apply_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/btn_delete_blackbg"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:background="@null"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/ll_wordexam"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_tutoring_top" >
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_tutoring_bottom"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp" >
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="5dp"
+                        android:text="1"
+                        android:textColor="#24b46a"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left|top"
+                        android:lineSpacingExtra="2dp"
+                        android:text="학생들의 의지가 무너지지 않게 \n매일 암기하기로 약속한 단어를 체크합니다."
+                        android:textColor="#757575"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"  >
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="5dp"
+                        android:text="2"
+                        android:textColor="#24b46a"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="2dp"
+                        android:layout_weight="1"
+                        android:gravity="left|top"
+                        android:lineSpacingExtra="2dp"
+                        android:text="단어를 제대로 암기했는지 시험을 통하여 점검하고, 점검된 내용을 바탕으로 리뷰를 진행합니다."
+                        android:textColor="#757575"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"  >
+
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="5dp"
+                        android:text="3"
+                        android:textColor="#24b46a"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="2dp"
+                        android:gravity="left|top"
+                        android:lineSpacingExtra="2dp"
+                        android:text="리뷰에서는 단어의 쓰임, 고득점을 위한 각 단어의 품사 변형, 문장에서의 쓰임 및 학생 수준의 맞는 기본적인 문법 설명까지 이루어집니다."
+                        android:textColor="#757575"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_onlinelesson_join"
+                    android:layout_width="fill_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/willqwest_confirm_btn"
+                    android:text="자세히 알아보기"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_onlinelesson_donotshow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="일주일 동안 보지 않기"
+                    android:textColor="#757575"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_studylist"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_faq_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_call_qna"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_faqpage_councellingbutton_normal"
+            android:text="1:1문의"
+            android:textColor="#8a000000"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/bt_send_email"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_faqpage_councellingbutton_normal"
+            android:text="상담 전화"
+            android:textColor="#8a000000"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="22dp"
+        android:background="#000000" />
+
+    <ListView
+        android:id="@+id/faq_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ll_faq_menu"
+        android:divider="#ffffff"
+        android:dividerHeight="0dp"
+        android:focusable="false" />
+
+</LinearLayout>

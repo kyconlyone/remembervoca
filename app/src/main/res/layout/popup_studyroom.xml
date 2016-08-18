@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#88000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tuto_end"
+        android:orientation="vertical" >
+
+        <!-- Fail -->
+
+        <LinearLayout
+            android:id="@+id/ll_searchsr_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="밀당영단어 가맹점이 아닙니다."
+                android:textColor="#757575"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="[인증 실패]"
+                android:textColor="#316F9B"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:text="가맹 독서실 내에서만\n무료 사용이 가능합니다."
+                android:textColor="#316F9B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="*가맹 독서실에서 접속을 시도하셨는데도 이 화면이 표시되는 경우, 고객지원팀 (010-3226-3632)으로 연락바랍니다.\n*독서실 밖에서도 사용 하고 싶으신 분은 앱 안에서 결제해 주시거나 독서실 카운터에서 사용권을 구매해 주세요."
+                android:textColor="#757575"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bt_searchsr_redo"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/wordqwest_confirm_btn"
+                android:text="다시 시도"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_searchsr_undo"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/img_secession_cancel"
+                android:text="취소"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- SCAN -->
+
+        <LinearLayout
+            android:id="@+id/ll_searchsr_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_searchsr_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center_horizontal"
+                android:textColor="#757575"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_searchsr"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/img_studyroom_progressbar" />
+
+                <ProgressBar
+                    android:id="@+id/progress_studyroom_search"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+                </ProgressBar>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_searchsr_turnon"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/willqwest_confirm_btn"
+                android:text="WIFI 켜기"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bt_searchsr_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@drawable/img_secession_cancel"
+                android:text="취소"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

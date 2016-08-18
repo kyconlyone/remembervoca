@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="17dp"
+        android:background="@drawable/feed_card_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="23dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="23dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Level up"
+                android:textColor="#44ffffff"
+                android:textSize="11sp"
+                android:textStyle="bold" 
+                android:layout_marginLeft="9dp"/>
+
+            <ImageButton
+                android:id="@+id/iv_feed_level"
+                android:layout_width="55dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:src="@drawable/feed_card_btn"
+                android:visibility="gone" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_feed_level_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:text="레벨 업!\n 레벨 4가 되었어요."
+            android:lineSpacingExtra="8dip"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_feed_level_contents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:text="쿵따리 샤바라 빠빠빠~ "
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

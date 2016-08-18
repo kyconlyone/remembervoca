@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/popup_gray_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/qwest_card_popup"
+	    android:orientation="vertical" 
+	    android:gravity="center_horizontal"
+	    android:paddingBottom="36dp"
+	    android:paddingLeft="36dp"
+	    android:paddingRight="36dp">
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="44dp"
+	        android:text="카카오톡 차단 기능"
+	        android:textSize="16sp"
+	        android:alpha="0.87"
+	        android:textColor="#ea4e37"
+		    android:textStyle="bold"/>
+	
+	    <ImageView 
+	        android:layout_width="172dp"
+	        android:layout_height="172dp"
+	        android:layout_marginTop="7dp" 
+	        android:src="@drawable/willqwest_kakao_icon"/>
+	    
+	    <TextView
+	        android:id="@+id/tv_willtutodialog_contents"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+	        android:layout_marginTop="7dp"
+	        android:textSize="12sp"
+	        android:lineSpacingExtra="5dp"
+	        android:textColor="#000000"
+	        android:alpha="0.54"
+	    	android:gravity="center_horizontal"
+	        android:text="인기많은 김기훈님의\n의지를 돕기위해\n카카오톡 차단 기능을 드릴게요 ^^"/>
+	    
+	    <Button 
+	        android:id="@+id/bt_tuto_will_popup_ok"
+	        android:layout_width="match_parent"
+	        android:layout_height="44dp" 
+	        android:text="확인"
+	        android:textColor="#ffffff"
+	        android:layout_marginTop="22dp"
+	        android:background="@drawable/redbutton"/>
+	</LinearLayout>
+</LinearLayout>

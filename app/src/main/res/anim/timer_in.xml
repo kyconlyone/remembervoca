@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:interpolator="@android:anim/linear_interpolator">
+    <scale 
+        android:fromXScale="0.04"
+        android:toXScale="1.2"
+        
+        android:fromYScale="0.04"
+        android:toYScale="1.2"
+        
+        android:pivotX="50%"
+        android:pivotY="50%"
+        
+        android:duration="208"/>
+
+    <alpha 
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        
+        android:duration="208"/>
+    
+    <scale 
+        android:fromXScale="1.0"
+        android:toXScale="0.67"
+        
+        android:fromYScale="1.0"
+        android:toYScale="0.67"
+        
+        android:pivotX="50%"
+        android:pivotY="50%"
+        
+        android:duration="208"
+        android:startOffset="208"/>
+    
+    <scale 
+        android:fromXScale="1.0"
+        android:toXScale="1.25"
+        
+        android:fromYScale="1.0"
+        android:toYScale="1.25"
+        
+        android:pivotX="50%"
+        android:pivotY="50%"
+        
+        android:duration="208"
+        android:startOffset="417"/>
+    
+    <scale 
+        android:fromXScale="1.0"
+        android:toXScale="1.0"
+        
+        android:fromYScale="1.0"
+        android:toYScale="1.0"
+        
+        android:pivotX="50%"
+        android:pivotY="50%"
+        
+        android:duration="167"
+        android:startOffset="625"/>
+    
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-60%"
+        
+        android:duration="167"
+        android:startOffset="792"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-35%"
+        
+        android:duration="250"
+        android:startOffset="959"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="95%"
+        
+        android:duration="292"
+        android:startOffset="1208"/>
+    
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-60%"
+        
+        android:duration="167"
+        android:startOffset="1500"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-35%"
+        
+        android:duration="250"
+        android:startOffset="1667"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="95%"
+        
+        android:duration="292"
+        android:startOffset="1917"/>
+    
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-60%"
+        
+        android:duration="167"
+        android:startOffset="2208"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-35%"
+        
+        android:duration="250"
+        android:startOffset="2375"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="95%"
+        
+        android:duration="292"
+        android:startOffset="2625"/>
+    
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-60%"
+        
+        android:duration="167"
+        android:startOffset="2917"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="-35%"
+        
+        android:duration="250"
+        android:startOffset="3083"/>
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="95%"
+        
+        android:duration="292"
+        android:startOffset="3333"/>
+</set>

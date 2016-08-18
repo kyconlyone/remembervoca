@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_account_payment_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_purchase_googlestyle"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="무통장입금 신청"
+            android:textColor="#757575"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="무통장입금 신청시, 입금여부와 상관없이 지금부터 사용이 가능합니다."
+            android:textColor="#757575" />
+
+        <LinearLayout
+            android:id="@+id/ll_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="결제금액과 기간을 선택해주세요"
+                android:textColor="#757575" />
+
+            <Spinner
+                android:id="@+id/sp_account_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#ebebeb"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="예금주 | "
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="아이헤이트플라잉버그스(주)"
+                    android:textColor="#757575" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="은행명 | "
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="우리은행"
+                    android:textColor="#757575" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="계좌번호 | "
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1005002350713"
+                    android:textColor="#757575" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="결제금액 | "
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:id="@+id/tv_account_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100,000,000,000원"
+                    android:textColor="#757575" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="24dp"
+            android:text="무통장입금 신청시 위 내용을 회원님께 문자로 보내드리며, 24시간 이내에 문자로 보내드린 계좌로 입금시 유료 회원으로 정식 등록됩니다."
+            android:textColor="#757575" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="28dp"
+                    android:gravity="left"
+                    android:src="@drawable/btn_purchase_googlestyle_mdlogo" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_account_payment"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:background="@drawable/btn_purchase_googlestyle_green"
+                android:text="신청하고 계속 학습"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_account_payment_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_purchase_googlestyle"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신청이 완료되었습니다.\n24시간 이내에 입금을 완료해 주세요."
+            android:textColor="#757575"
+            android:textSize="20sp"
+            android:textStyle="bold" 
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:textColor="#757575"
+            android:text="앱을 다시 시작해 주세요." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="28dp"
+                    android:gravity="left"
+                    android:src="@drawable/btn_purchase_googlestyle_mdlogo" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_account_payment_close"
+                android:layout_width="120dp"
+                android:layout_height="28dp"
+                android:text="확인" 
+                android:background="@drawable/btn_purchase_googlestyle_green"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

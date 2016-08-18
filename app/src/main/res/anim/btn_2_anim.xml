@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:interpolator="@android:anim/linear_interpolator" >
+
+	<translate
+	    android:fromYDelta="-525%"
+	    android:toYDelta="-275%"
+	    
+	    android:duration="292" 
+	    android:interpolator="@android:anim/linear_interpolator" />
+	
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="150%"
+	    
+	    android:duration="167" 
+	    android:startOffset="292"
+	    android:interpolator="@android:anim/linear_interpolator" />
+<!-- 이 위까지 1 -->
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="13.6%"
+	    
+	    android:duration="42" 
+	    android:startOffset="458"
+	    android:interpolator="@android:anim/linear_interpolator" />
+	
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="37.8%"
+	    
+	    android:duration="83" 
+	    android:startOffset="500"
+	    android:interpolator="@android:anim/linear_interpolator" />
+	
+	<translate
+	    android:fromYDelta="0%"
+	    android:toYDelta="70%"
+	    
+	    android:duration="125" 
+	    android:startOffset="583"
+	    android:interpolator="@android:anim/linear_interpolator" />
+<!-- 이 위까지 2 -->
+	
+</set>

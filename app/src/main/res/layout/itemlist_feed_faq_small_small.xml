@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_faq_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp" >
+
+            <ImageView
+                android:id="@+id/iv_faq_question"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:src="@drawable/icon_faqpage_questionicon_normal" />
+
+            <TextView
+            android:textColor="#de000000"
+            android:textSize="11sp"
+                android:id="@+id/tv_feed_faq_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="하하하하" />
+
+            <ImageView
+                android:id="@+id/direction"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:gravity="top|center_horizontal"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_faqsettingpage_pressicon_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_faq_answer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:background="#f2f2f2"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:gravity="top|center_horizontal"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_faqpage_answericon_normal" />
+
+        <TextView
+            android:textColor="#8a000000"
+            android:textSize="10sp"
+            android:id="@+id/tv_feed_faq_contents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="20dp"
+            android:text="난 너를 믿었던 만큼 난 내 친구도 믿었기에 난 아무런 부담 없이 널 내 친구에게 소개 시켜줬고 그런 만남이 있은 후 로부터 우리는 자주 함께 만나며 즐거운 시간을 보내며 함께 어울렸던 것뿐인데" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#000000" />
+
+</LinearLayout>

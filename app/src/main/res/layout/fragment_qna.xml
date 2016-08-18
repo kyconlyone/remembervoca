@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="22dp"
+            android:text="휴대폰 번호를 남겨주세요."
+            android:textColor="#8a000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edit_sendqna_phone"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#f7f9f9"
+            android:hint="휴대폰번호"
+            android:inputType="phone"
+            android:textColor="#de000000"
+            android:textColorHint="#757575"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="28dp"
+            android:text="문의하실 내용은 무엇인가요?"
+            android:textColor="#8a000000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edit_sendqna_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#f7f9f9"
+            android:gravity="left|top"
+            android:hint="문의 내용"
+            android:inputType="textMultiLine"
+            android:paddingTop="14dp"
+            android:textColor="#de000000"
+            android:textColorHint="#757575"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_sendqna_send"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_weight="0"
+            android:background="#00b569"
+            android:text="보내기"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_sendqna"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

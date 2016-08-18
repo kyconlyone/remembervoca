@@ -1,0 +1,416 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/card_basic"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="28dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_feedback_memory_review"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_feedback_memory_review_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#e1aa25"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center"
+                        android:text="복습이 필요한 단어"
+                        android:textColor="#8a000000"
+                        android:textSize="14sp" >
+                    </TextView>
+
+                    <View
+                        android:id="@+id/view_feedback_memory_review_underbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="#e1a922" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_feedback_memory_relax"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/text_feedback_memory_relax_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="center"
+                        android:text="00"
+                        android:textColor="#8a000000"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center"
+                        android:text="안심 단어"
+                        android:textColor="#8a000000"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:id="@+id/view_feedback_memory_relax_underbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="#e1a922"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#fbfbfb"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/text_feedback_memory_explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/manggak_informent_dialoguebox"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="1.2"
+                        android:paddingBottom="18dp"
+                        android:paddingTop="18dp"
+                        android:text="블라블라블라블라블라블라블라블라\n블라블라블라블라블라블라블라블라\n블라블라블라블라블라블라블라블라\n블라블라블라블라블라블라블라블라"
+                        android:textColor="#8a000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="36dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="6dp" >
+
+                    <com.ihateflyingbugs.hsmd.graph.PieGraph
+                        android:id="@+id/graph_feedback_memory_piegraph"
+                        android:layout_width="228dp"
+                        android:layout_height="228dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="12dp"
+                        app:pieInnerCircleRatio="128"
+                        app:pieSlicePadding="0dip" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="228dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/text_feedback_memory_total_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="83dp"
+                            android:gravity="center"
+                            android:text="0000"
+                            android:textColor="#8a000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="내 암기 단어"
+                            android:textColor="#8a000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/card_basic"
+            android:orientation="vertical"
+            android:paddingBottom="36dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/manggak_informent_glaphexplain"
+                android:orientation="vertical"
+                android:paddingBottom="21dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="14dp" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/manggak_informent_gridbox" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/img_feedback_memory_forgetgraph"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="matrix"
+                            android:src="@drawable/manggak_informent_graphbox" />
+
+                        <ImageView
+                            android:id="@+id/img_feedback_memory_forgetgraph_default"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/manggak_informent_basicbox" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="6dp"
+                            android:gravity="bottom"
+                            android:text="망각곡선 측정률"
+                            android:textColor="#8a000000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/text_feedback_memory_forgetrate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="6dp"
+                            android:gravity="bottom"
+                            android:text="00%"
+                            android:textColor="#8a000000"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <ImageButton
+                            android:id="@+id/btn_feedback_memory_forgetgraph_info"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="0"
+                            android:background="#00000000"
+                            android:src="@drawable/manggak_informent_questionmark" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="복습 단어 생성 예상 시간"
+                    android:textColor="#8a000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:background="#000000" />
+
+                <TextView
+                    android:id="@+id/text_feedback_memory_forget_createdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:text="내일 00:00"
+                    android:textColor="#e1aa25"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_feedback_memory_forget_createcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center"
+                    android:text="복습할 단어가 약 00개 생성됩니다."
+                    android:textColor="#e1aa25"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_feedback_memory_forget_remaindate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="(2014/12/02 00:00 기준, 00시간 00분 뒤)"
+                    android:textColor="#70000000"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#be915a"
+            android:orientation="vertical"
+            android:padding="24dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="기억 관련 푸쉬 알림"
+                    android:textColor="#8affffff"
+                    android:textSize="14sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_feedback_memory_alarm"
+                    android:layout_width="65dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    android:background="@drawable/onbutton"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="312dp"
+                android:layout_height="0.5dp"
+                android:layout_gravity="center"
+                android:background="#8e6c44" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/layout_feedback_memory_memorizeword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="외운 단어 보기"
+                    android:textColor="#8affffff"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/icon_allpage_backicon_normal_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

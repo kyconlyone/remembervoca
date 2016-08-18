@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_tuto_pay_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_tuto_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/img_quit_todaystudy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="해당 단어를 더 이상 복습하지 않겠습니까?"
+            android:textColor="#757575"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_enoughstudy_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/img_secession_cancel"
+                android:text="취소"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:textStyle="bold" 
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/bt_enoughstudy_ok"
+                android:layout_width="fill_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/willqwest_confirm_btn"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

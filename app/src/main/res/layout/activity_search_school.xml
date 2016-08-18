@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="검색하실 학교명을 입력해 주세요."
+        android:textSize="12sp"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textColor="#757575"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_search_school"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:hint="예)밀당고등학교"
+            android:textSize="14sp"
+            android:background="@drawable/bg_searchschool_textbglight"
+            android:textColor="#212121" />
+
+        <Button
+            android:id="@+id/bt_search_school"
+            android:layout_width="104dp"
+            android:layout_height="80dp"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:text="검색" 
+            android:background="@drawable/btn_searchschool_primary"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search_school"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

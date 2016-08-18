@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_examquestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_examquestion_frequency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:text="EBS10"
+        android:textColor="#316f9b"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp" >
+
+        <TextView
+            android:id="@+id/text_examquestion_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#316f9b"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_examquestion_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="3dp"
+            android:textColor="#316f9b"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+    <TextView
+            android:id="@+id/text_examquestion_question_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:textColor="#316f9b"
+            android:textSize="18sp" 
+            android:visibility="gone"/>
+    
+    <TextView
+            android:id="@+id/text_examquestion_question_translate"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:textColor="#316f9b"
+            android:textSize="18sp" 
+            android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/text_examquestion_sentence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/text_examquestion_sentencemean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#757575"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/text_examquestion_sentenceinfo"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_examquestion_example1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/border_example_selected" >
+
+        <TextView
+            android:id="@+id/text_examquestion_example1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="경고"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_examquestion_ox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_correct_selected" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_examquestion_example2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/border_example_default" >
+
+        <TextView
+            android:id="@+id/text_examquestion_example2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="경고"
+            android:textColor="#316f9b"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_examquestion_ox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_wrong" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_examquestion_example3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/border_example_default" >
+
+        <TextView
+            android:id="@+id/text_examquestion_example3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="경고"
+            android:textColor="#316f9b"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_examquestion_ox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_wrong" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_examquestion_example4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:background="@drawable/border_example_default" >
+
+        <TextView
+            android:id="@+id/text_examquestion_example4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="경고"
+            android:textColor="#316f9b"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/img_examquestion_ox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/icon_wrong" />
+    </RelativeLayout>
+
+</LinearLayout>

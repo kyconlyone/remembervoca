@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:interpolator="@android:anim/linear_interpolator">
+    <translate 
+        android:fromYDelta="-450%"
+        android:toYDelta="-350%"
+        
+        android:duration="292"
+        android:interpolator="@android:anim/linear_interpolator"/>
+    
+    <alpha 
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        
+        android:duration="292"/>
+
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="141%"
+        
+        android:duration="83"
+        android:startOffset="292"
+        android:interpolator="@android:anim/linear_interpolator"/>
+
+    <translate 
+        android:fromYDelta="0%"
+        android:toYDelta="89%"
+        
+        android:duration="83"
+        android:startOffset="375"
+        android:interpolator="@android:anim/linear_interpolator"/>
+	<translate 
+        android:fromYDelta="0%"
+        android:toYDelta="39%"
+        
+        android:duration="42"
+        android:startOffset="458"
+        android:interpolator="@android:anim/linear_interpolator"/>
+	<translate 
+        android:fromYDelta="0%"
+        android:toYDelta="39%"
+        
+        android:duration="42"
+        android:startOffset="500"
+        android:interpolator="@android:anim/linear_interpolator"/>
+	<translate 
+        android:fromYDelta="0%"
+        android:toYDelta="29%"
+        
+        android:duration="42"
+        android:startOffset="542"
+        android:interpolator="@android:anim/linear_interpolator"/>
+	<translate 
+        android:fromYDelta="0%"
+        android:toYDelta="3%"
+        
+        android:duration="42"
+        android:startOffset="583"
+        android:interpolator="@android:anim/linear_interpolator"/>
+	<translate 
+        android:fromYDelta="0%"
+        android:toYDelta="6%"
+        
+        android:duration="42"
+        android:startOffset="625"
+        android:interpolator="@android:anim/linear_interpolator"/>
+
+</set>

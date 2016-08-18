@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/payment_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_kakaostory_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tuto_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="104dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/img_kkostry_wordchart_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:text="확인하실 등급을 선택해주세요."
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/sp_kakaostory"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:spinnerMode="dialog"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp" />
+
+        <Button
+            android:id="@+id/bt_kakaostory_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:background="@drawable/wordqwest_confirm_btn"
+            android:text="확인" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kakaostory_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tuto_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            
+            android:id="@+id/img_kakaostory_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/img_kkostry_wordchart_1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="생소한 단어인가요?\n아니면 한 번쯤 본 적 있는 단어인가요?" />
+
+        <TextView
+            android:id="@+id/tv_kakaostory_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="밀당 영단어의 학생 6,482명의 학습 데이터를 분석해보니 leak를 외운 적 있던 학생 중 77%는 하루만에 망각하였습니다. " />
+
+        <Button
+            android:id="@+id/bt_kakaostory_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_kkostry_share"
+            android:text="카카오스토리에서 더보기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kakaostory_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_tuto_end"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_kakao_story_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="김밀당님의 카카오스토리 담벼락에서 BEST 10 단어를 확인해주세요."
+            android:textColor="#757575"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_kakaostory_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wordqwest_confirm_btn"
+            android:text="확인"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>
